@@ -2,18 +2,19 @@ clear all;
 %freeCAD pour tests simples
 
 P = 1 ; %N  - effort
-L = 50 ;  %mm  - longueur 
-E = 21000; %MPa - Module d'Young de Creo
-b = 10; %mm  - largeur 
-h = 1;%mm  - hauteur
+L = 69.3 ;  %mm  - longueur 
+E = 1786.06; %MPa - Module d'Young de Creo
+b = 50; %mm  - largeur 
+h = 50;%mm  - hauteur
 r = 10;%mm  - rayon
-e = 1;%mm  - epaisseur
-theta = 0.62*pi()/180;
+tc = 1;%mm  - epaisseur col
+tl = 1;%mm  - epaisseur lames
+theta = 5*pi()/180;
 
 
-[K, strain]=col(E,e,r,b,theta);
+[K, strain]=col(E,tc,r,b,theta);
 
-[K,strain]=lames(E,e,L,b,theta);
+[K2,strain2]=lames(E,tl,L,b,theta);
 
 
 
