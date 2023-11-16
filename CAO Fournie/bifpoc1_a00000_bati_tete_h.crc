@@ -1,0 +1,47 @@
+﻿  MODELE BIFPOC1_A00000_BATI_TETE_H :
+ 
+
+  3 BOUCLES DE REFERENCE CIRCULAIRE TROUVEES
+ 
+
+   N° de boucle 1
+
+   Profondeur de la boucle = 3
+
+Numéro de fonction 11 (AXE DE REFERENCE, ID = 493) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC se refère à:
+
+Numéro de fonction 24 (TROU_1, ID = 509) 
+  dans le modèle BIFPOC1_AA0001_VISCOTEC_PRT0002 se refère à:
+
+Numéro de fonction 11 (AXE DE REFERENCE, ID = 493) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC - cercle fermé.
+
+
+   N° de boucle 2
+
+   Profondeur de la boucle = 3
+
+Numéro de fonction 12 (AXE DE REFERENCE, ID = 497) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC se refère à:
+
+Numéro de fonction 25 (TROU_2, ID = 628) 
+  dans le modèle BIFPOC1_AA0001_VISCOTEC_PRT0002 se refère à:
+
+Numéro de fonction 12 (AXE DE REFERENCE, ID = 497) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC - cercle fermé.
+
+
+   N° de boucle 3
+
+   Profondeur de la boucle = 3
+
+Numéro de fonction 20 (AXE DE REFERENCE, ID = 624) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC se refère à:
+
+Numéro de fonction 28 (TROU_8, ID = 5828) 
+  dans le modèle BIFPOC1_AA0001_VISCOTEC_PRT0002 se refère à:
+
+Numéro de fonction 20 (AXE DE REFERENCE, ID = 624) 
+  dans le modèle BIFPOC1_AA0000__VISCOTEC - cercle fermé.
+
