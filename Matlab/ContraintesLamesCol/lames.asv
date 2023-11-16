@@ -1,0 +1,6 @@
+function [K,strain]=lames(E,e,L,b,theta)
+K=(8*E*(b*e^(3)))/(L);
+strain=(E*e)/(L)*theta;
+sprintf('raideur dans les lames: %.2f : N/mm', K)
+sprintf('Contrainte max lames: %.2f : MPa', strain)
+end 
