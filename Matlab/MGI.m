@@ -1,11 +1,10 @@
-function [d1, th2] = MGI(th3, L, B)
+function [d1, th2] = MGI(th3, L)
 
 l1 = L(1);
 l2 = L(2);
 l3 = L(3);
-
-b1 = B(1);
-b2 = B(2);
+b1 = L(6);
+b2 = L(7);
 
 
 c3 = cos(th3);

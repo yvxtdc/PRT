@@ -16,7 +16,7 @@ RzC = -F*cos(th2);     % Force selon z dans la liaison pivot
 % PFS Piston
 RxO = -F*sin(th2);
 MrO = -F*sin(th2)*d1;
-P = F*cos(th2);
+P = -F*cos(th2);
 
 % Attributions
 Ra = [-F*sin(th2) 0 ; 0 0 ; F*cos(th2) 0];
