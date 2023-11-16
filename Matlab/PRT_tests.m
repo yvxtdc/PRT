@@ -1,4 +1,5 @@
 close all;
+clc;
 clf;
 
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
@@ -38,3 +39,10 @@ plot(th3*(180/pi),th2*(180/pi));
 
 figure()
 plot(th3*(180/pi),-(th3+th2)*(180/pi)+90);
+
+
+
+figure()
+th3 = 10*pi/180;
+[d1, th2] = MGI(th3, L);
+drawArm(d1, th2, th3, L, -15, false);

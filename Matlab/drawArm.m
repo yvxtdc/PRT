@@ -1,4 +1,4 @@
-function drawArm(d1, th2, th3, L, Ch)
+function drawArm(d1, th2, th3, L, Ch, DispForces)
 
 % Definition parametres
 L1 = L(1);
@@ -7,6 +7,10 @@ L4 = L(4);
 L5 = L(5);
 b1 = L(6);
 b2 = L(7);
+
+% Definition des axes
+axis([-L4 b1+L1 -b2-L4-.01 .01 ])
+set(gca,'DataAspectRatio',[1,1,1])
 
 % Position des points
 O = [b1 0];
@@ -27,22 +31,19 @@ line([BC(1) B(1)],[BC(2) B(2)],'color','black')
 line([C(1) CE(1)],[C(2) CE(2)],'color','black')
 line([CE(1) E(1)],[CE(2) E(2)],'color','black')
 
-% Affichage des contraintes internes
-scale = .0005;
-[P, Rc, Ro, F] = contraintes(d1, th2, th3, L, Ch);
-ln = line([C(1) C(1)+Rc(3,1)*scale],[C(2) C(2)+Rc(3,1)*scale],'color','r');
-ln.LineWidth = 3;
-ln = line([O(1) O(1)+Ro(1,1)*scale],[O(2) O(2)+Ro(3,1)*scale],'color','r');
-ln.LineWidth = 3;
 
-
-
-
-
-
-
-% Definition des axes
-axis([-L4 b1+L1 -b2-L4-.01 .01 ])
-set(gca,'DataAspectRatio',[1,1,1])
+if(DispForces == true)
+    % Affichage des contraintes internes
+    scale = .0005;
+    [P, Rc, Ro, F] = contraintes(d1, th2, th3, L, Ch);
+    ln = line([C(1) C(1)-Rc(1,1)*scale],[C(2) C(2)-Rc(3,1)*scale],'color','r');
+    ln.LineWidth = 3;
+    ln = line([O(1) O(1)+Ro(1,1)*scale],[O(2) O(2)+Ro(3,1)*scale],'color','r');
+    ln.LineWidth = 3;
+    ln = line([E(1) E(1)+Ch*scale],[E(2) E(2)],'color','r');
+    ln.LineWidth = 3;
+    ln = line([B(1) B(1)+F*sin(th2)*scale],[B(2) B(2)-F*cos(th2)*scale],'color','r');
+    ln.LineWidth = 3;
+end
 
 end

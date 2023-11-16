@@ -23,3 +23,6 @@ Ra = [-F*sin(th2) 0 ; 0 0 ; F*cos(th2) 0];
 Rb = -1*Ra;
 Rc = [RxC 0 ; 0 0 ; RzC 0];
 Ro = [RxO 0 ; 0 MrO ; 0 0];
+
+
+
