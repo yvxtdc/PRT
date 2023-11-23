@@ -35,14 +35,14 @@ line([CE(1) E(1)],[CE(2) E(2)],'color','black')
 if(DispForces == true)
     % Affichage des contraintes internes
     scale = .0005;
-    [P, Rc, Ro, F] = contraintes(d1, th2, th3, L, Ch);
-    ln = line([C(1) C(1)-Rc(1,1)*scale],[C(2) C(2)-Rc(3,1)*scale],'color','r');
+    [P, Rc, Ro, Rb] = contraintes(d1, th2, th3, L, Ch);
+    ln = line([C(1) C(1)+Rc(1,1)*scale],[C(2) C(2)+Rc(3,1)*scale],'color','r');
     ln.LineWidth = 3;
     ln = line([O(1) O(1)+Ro(1,1)*scale],[O(2) O(2)+Ro(3,1)*scale],'color','r');
     ln.LineWidth = 3;
     ln = line([E(1) E(1)+Ch*scale],[E(2) E(2)],'color','r');
     ln.LineWidth = 3;
-    ln = line([B(1) B(1)+F*sin(th2)*scale],[B(2) B(2)-F*cos(th2)*scale],'color','r');
+    ln = line([B(1) B(1)+Rb(1,1)*scale],[B(2) B(2)+Rb(3,1)*scale],'color','r');
     ln.LineWidth = 3;
 end
 
