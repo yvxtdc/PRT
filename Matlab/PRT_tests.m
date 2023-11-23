@@ -17,7 +17,7 @@ Rcz = d1;
 
 for i = 1:size(th3,2)
     [d1(i), th2(i)] = MGI(th3(i), L);
-    [P(i), Rc, Ro, F] = contraintes(d1(i), th2(i), th3(i), L, Ch);
+    [P(i), Rc, Ro, F] = contraintes(d1(i), th2(i), th3(i), L, Ra);
     Rcx(i) = Rc(1,1);
     Rcz(i) = Rc(3,1);
 end
