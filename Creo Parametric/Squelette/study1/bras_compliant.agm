@@ -1,0 +1,273 @@
+____________________________________________________________
+
+Fichier journal Creo Simulate AutoGEM
+Copyright(c) 2013 PTC (tm) -
+All Rights Reserved
+____________________________________________________________
+
+Nom du modèle :               .\study1\bras_compliant
+Nom du produit :              Creo Simulate Structure
+Version du produit :          P-80-44:spg
+Machine :                     x86e_win64
+Date de création :            11/30/23
+Heure de création :           14:00:30
+Auteur :                      UNKNOWN
+
+____________________________________________________________
+
+          Paramètres AutoGEM
+
+  Isoler les fonctions de surface : 
+
+  [x] Coins rentrants
+  [x] Charges au point
+  [x] Restrictions au point
+  [x] Charges thermiques au point
+  [x] Températures frontière au point
+  [x] Conditions de convection au point
+
+ ------------------------------------------
+
+  [x] Insérer points
+  [x] Créer les liens si nécessaire
+  [x] Déplacer ou supprimer des points existants
+  [x] Modifier ou supprimer les éléments existants
+  [ ] Modélisation détaillée de congé
+  [ ] Afficher les messages AutoGEM
+  [ ] Interruption automatique
+
+ ------------------------------------------
+
+  Elément de type coque :   Quadrilatères et triangles
+  Type élém solides :   Briques, Pentaèdres, Tétraèdres
+
+  Angles autorisés (en degrés) :
+    Arête    Min :   5.0  Max :  175.0
+    Face    Min :   5.0  Max :  175.0
+
+  Rot max d'arête autorisée (degrés) :  95.0
+
+  Rapport d'aspect maximal autorisé :  30.0
+
+____________________________________________________________
+
+Travail sur 1 volume(s) ...
+Prétraitement des fonctions de la surface 1 sur 31 ...
+Prétraitement des fonctions de frontières...
+Optimisation des emplacements des points frontières ...
+Détection des fonctions minces sur le volume ...
+Prétraitement des fonctions de volume...
+0 éléments solides existent à l'intérieur du volume.
+Création d'éléments de type solide ...
+Optimisation des éléments ...
+Affichage des éléments...
+
+____________________________________________________________
+
+          Résumé AutoGEM
+
+  Entités créées :
+
+    Poutre :      0       Arête :            3626
+    Triangle :    0       Face :             4629
+    Quadrilatère :    0       Lien face-face :   0
+    Tétraèdre : 1881       Lien arête-face :  0
+    Pentaèdre :    0
+    Brique :      0
+
+ ----------------------------------------------------
+
+  Critère satisfait :
+
+  Angles (en degrés) :
+    Arête  Min :   5.1    Max :  167.2
+    Face  Min :   5.0    Max :  173.5
+
+  Rapport d'aspect maximal : 10.6
+
+  Temps écoulé :    0.0 min    Temps CPU :   0.0 min
+
+____________________________________________________________
+
+____________________________________________________________
+
+Fichier journal Creo Simulate AutoGEM
+Copyright(c) 2013 PTC (tm) -
+All Rights Reserved
+____________________________________________________________
+
+Nom du modèle :               .\study1\bras_compliant
+Nom du produit :              Creo Simulate Structure
+Version du produit :          P-80-44:spg
+Machine :                     x86e_win64
+Date de création :            11/30/23
+Heure de création :           14:01:20
+Auteur :                      UNKNOWN
+
+____________________________________________________________
+
+          Paramètres AutoGEM
+
+  Isoler les fonctions de surface : 
+
+  [x] Coins rentrants
+  [x] Charges au point
+  [x] Restrictions au point
+  [x] Charges thermiques au point
+  [x] Températures frontière au point
+  [x] Conditions de convection au point
+
+ ------------------------------------------
+
+  [x] Insérer points
+  [x] Créer les liens si nécessaire
+  [x] Déplacer ou supprimer des points existants
+  [x] Modifier ou supprimer les éléments existants
+  [ ] Modélisation détaillée de congé
+  [ ] Afficher les messages AutoGEM
+  [ ] Interruption automatique
+
+ ------------------------------------------
+
+  Elément de type coque :   Quadrilatères et triangles
+  Type élém solides :   Briques, Pentaèdres, Tétraèdres
+
+  Angles autorisés (en degrés) :
+    Arête    Min :   5.0  Max :  175.0
+    Face    Min :   5.0  Max :  175.0
+
+  Rot max d'arête autorisée (degrés) :  95.0
+
+  Rapport d'aspect maximal autorisé :  30.0
+
+____________________________________________________________
+
+Travail sur 1 volume(s) ...
+Prétraitement des fonctions de la surface 1 sur 31 ...
+Prétraitement des fonctions de frontières...
+Optimisation des emplacements des points frontières ...
+Détection des fonctions minces sur le volume ...
+Prétraitement des fonctions de volume...
+1161 éléments solides existent à l'intérieur du volume.
+Création d'éléments de type solide ...
+Optimisation des éléments ...
+Affichage des éléments...
+
+____________________________________________________________
+
+          Résumé AutoGEM
+
+  Entités créées :
+
+    Poutre :      0       Arête :            362
+    Triangle :    0       Face :             488
+    Quadrilatère :    0       Lien face-face :   0
+    Tétraèdre :  207       Lien arête-face :  0
+    Pentaèdre :    0
+    Brique :      0
+
+ ----------------------------------------------------
+
+  Critère satisfait :
+
+  Angles (en degrés) :
+    Arête  Min :   5.0    Max :  166.7
+    Face  Min :   5.1    Max :  172.7
+
+  Rapport d'aspect maximal :  9.9
+
+  Temps écoulé :    0.0 min    Temps CPU :   0.0 min
+
+____________________________________________________________
+
+____________________________________________________________
+
+Fichier journal Creo Simulate AutoGEM
+Copyright(c) 2013 PTC (tm) -
+All Rights Reserved
+____________________________________________________________
+
+Nom du modèle :               .\study1\bras_compliant
+Nom du produit :              Creo Simulate Structure
+Version du produit :          P-80-44:spg
+Machine :                     x86e_win64
+Date de création :            11/30/23
+Heure de création :           14:03:17
+Auteur :                      UNKNOWN
+
+____________________________________________________________
+
+          Paramètres AutoGEM
+
+  Isoler les fonctions de surface : 
+
+  [x] Coins rentrants
+  [x] Charges au point
+  [x] Restrictions au point
+  [x] Charges thermiques au point
+  [x] Températures frontière au point
+  [x] Conditions de convection au point
+
+ ------------------------------------------
+
+  [x] Insérer points
+  [x] Créer les liens si nécessaire
+  [x] Déplacer ou supprimer des points existants
+  [x] Modifier ou supprimer les éléments existants
+  [ ] Modélisation détaillée de congé
+  [ ] Afficher les messages AutoGEM
+  [ ] Interruption automatique
+
+ ------------------------------------------
+
+  Elément de type coque :   Quadrilatères et triangles
+  Type élém solides :   Briques, Pentaèdres, Tétraèdres
+
+  Angles autorisés (en degrés) :
+    Arête    Min :   5.0  Max :  175.0
+    Face    Min :   5.0  Max :  175.0
+
+  Rot max d'arête autorisée (degrés) :  95.0
+
+  Rapport d'aspect maximal autorisé :  30.0
+
+____________________________________________________________
+
+Travail sur 1 volume(s) ...
+Prétraitement des fonctions de la surface 1 sur 31 ...
+Prétraitement des fonctions de frontières...
+Optimisation des emplacements des points frontières ...
+Détection des fonctions minces sur le volume ...
+Prétraitement des fonctions de volume...
+0 éléments solides existent à l'intérieur du volume.
+Création d'éléments de type solide ...
+Optimisation des éléments ...
+Affichage des éléments...
+
+____________________________________________________________
+
+          Résumé AutoGEM
+
+  Entités créées :
+
+    Poutre :      0       Arête :            3642
+    Triangle :    0       Face :             4630
+    Quadrilatère :    0       Lien face-face :   0
+    Tétraèdre : 1875       Lien arête-face :  0
+    Pentaèdre :    0
+    Brique :      0
+
+ ----------------------------------------------------
+
+  Critère satisfait :
+
+  Angles (en degrés) :
+    Arête  Min :   5.0    Max :  165.2
+    Face  Min :   5.0    Max :  172.5
+
+  Rapport d'aspect maximal :  9.7
+
+  Temps écoulé :    0.1 min    Temps CPU :   0.0 min
+
+____________________________________________________________
+

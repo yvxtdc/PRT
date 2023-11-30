@@ -1,0 +1,253 @@
+------------------------------------------------------------
+Creo Simulate Structure Version P-80-44:spg
+Résumé de l'étude de conception "study1"
+Thu Nov 30, 2023   13:59:17
+-----------------------------------------------------
+
+Paramètres d'exécution
+   Allocation de mémoire pour le solveur par blocs : 512.0     
+
+Statut des traitements en parallèle
+   Limite de tâches en parallèle pour l'exécution courante :        12
+   Limite de tâches en parallèle pour la plateforme courante :     64
+   Nombre de processeurs détectés automatiquement :                 12
+
+Vérification du modèle avant création des éléments...
+Ces vérifications tiennent compte du fait qu'AutoGEM
+créera automatiquement des éléments dans les volumes dotés de propriétés de
+matériau, sur les surfaces dotées de propriétés de type coque et sur les courbes
+dotées de propriétés de section de coque.
+   Générer les éléments automatiquement.
+Vérification du modèle après création des éléments...
+Le modèle ne contient aucune erreur.
+Résumé sur le modèle Creo Simulate Structure
+
+   Système d'unités principal : MillimÃ¨tre Newton Seconde (mmNs)
+
+   Longueur :          mm
+   Force :           N
+   Temps :            sec
+   Température :     C
+
+   Type de modèle : En trois dimentions
+
+   Points :                952
+   Arêtes :                3954
+   Faces :                5067
+
+   Ressorts :                 0
+   Masses :                  0
+   Poutres :                   0
+   Coques :                  0
+   Solides :               2065
+
+   Eléments :             2065
+
+------------------------------------------------------------
+
+Etude de conception d'optimisation
+
+Utilisation de l'algorithme d'optimisation GDP (Gradient Projection)
+Thu Nov 30, 2023   13:59:19
+
+Objectif
+   Analyse : Analysis1
+   Jeu de charges : LoadSet1
+   Minimize: Measure1  
+
+Pas de limites (sauf pour les limites inférieure et supérieure des paramètres définies par l'utilisateur)
+
+Paramètre           Valeur min.  Val. initiale  Valeur max.
+d30                         40            46            50
+
+Tolérance de convergence d'optimisation : 1         %
+Nombre maximal d'itérations d'optimisation : 20
+
+Commencer l'analyse de l'objectif et des limites de             (13:59:19)
+Conception initiale
+
+------------------------------------------------------------
+
+Statut de la conception initiale
+
+Paramètres :
+   d30                         46
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+Objectif (avant optimisation) :   1.8069e+02
+
+Vérif. ressources                                (14:00:11)
+   Temps écoulé                   (sec) :      54.66
+   Temps CPU                      (sec) :      23.77
+   Util. de la mémoire       (Ko) :     702148
+   Util. disque du rép. de travail (Ko) :      47104
+
+Commencer l'itération d'optimisation 1           (14:00:11)
+
+     Démarrage de la recherche de ligne            (14:00:11)
+     Taille de pas commandée par la limite supérieure sur
+     le paramètre d30
+
+     Itération de recherche de la ligne 1    
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Paramètres :
+        d30                       46.2
+     Objectif :   1.8061e+02
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Paramètres :
+        d30                         50
+     Objectif :   2.2642e+02
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Itération de recherche de la ligne 2    
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Paramètres :
+        d30                    48.4748
+     Objectif :   1.9776e+02
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Itération de recherche de la ligne 3    
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Paramètres :
+        d30                     46.026
+     Objectif :   1.7624e+02
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Itération de recherche de la ligne 4    
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Paramètres :
+        d30                    46.0195
+     Objectif :   1.7616e+02
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+     Recherche de la ligne terminée              (14:06:28)
+
+L'optimisation a convergé ; le gradient sur l'objectif
+n'est pas significatif.
+
+Meilleure conception trouvée :
+Paramètres :
+   d30                    46.0195
+Objectif :   1.7616e+02
+
+Répétition des analyses correspondant à la meilleure conception. (14:06:28)
+Lost network license
+Licenses OK.
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+** Avertissement :
+
+            Dépassement de la condition d'élasticité pour les matières
+            répertoriées ci-dessous. Utilisez une matière élastoplastique,
+            le cas échéant.
+EN_STEEL_INSA
+
+Statistiques sur l'étude d'optimisation :
+Nombre d'analyses initiale : 8
+Nombre d'analyses par perturbation : 5
+
+------------------------------------------------------------
+
+Utilisation de la mémoire et du disque :
+
+   Type de machine : Windows 64 
+   Allocation de RAM pour le solveur (méga-octets) : 512.0
+
+   Temps total écoulé (secondes) : 620.89    
+   Temps total CPU    (secondes) : 279.61    
+   Util. max. de la mémoire (kilo-octets) : 812979    
+   Util. disque du rép. de travail (kilo-octets) : 48128     
+   Temps total écoulé lors des mises à jour de paramètres (sec) :
+      35.85     
+   Temps total écoulé du solveur moins param. Mises à jour (sec) :
+      585.04    
+   Temps total CPU lors des m. à jour de paramètres (sec) :
+      12.72     
+   Temps total CPU du solveur poins param. Mises à jour (sec) :
+      266.89    
+
+   Taille du répertoire de résultats (kilobytes):
+   34873 .\study1
+
+------------------------------------------------------------
+Exécution terminée
+Thu Nov 30, 2023   14:09:38
+------------------------------------------------------

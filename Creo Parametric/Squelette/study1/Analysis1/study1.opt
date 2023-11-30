@@ -1,0 +1,58 @@
+Optimization Plotting File
+
+Analysis: Analysis1
+36 columns
+1 rows
+col    quantity
+1  optimization iteration number
+2  total_cost  2468
+3  total_mass  2474
+4  com_x  2684
+5  com_y  2690
+6  com_z  2696
+7  inertia_xx  2702
+8  inertia_xy  2708
+9  inertia_xz  2714
+10  inertia_yy  2720
+11  inertia_yz  2726
+12  inertia_zz  2732
+13  max_beam_bending  2486
+14  max_beam_tensile  2492
+15  max_beam_torsion  2756
+16  max_beam_total  2498
+17  max_disp_mag  2504
+18  max_disp_x  2510
+19  max_disp_y  2516
+20  max_disp_z  2522
+21  max_prin_mag  2552
+22  max_rot_mag  2528
+23  max_rot_x  2534
+24  max_rot_y  2540
+25  max_rot_z  2546
+26  max_stress_prin  2672
+27  max_stress_vm  2558
+28  max_stress_xx  2564
+29  max_stress_xy  2582
+30  max_stress_xz  2588
+31  max_stress_yy  2570
+32  max_stress_yz  2594
+33  max_stress_zz  2576
+34  min_stress_prin  2678
+35  strain_energy  2600
+36  Measure1  17734
+
+DATA
+  0  0.000000e+00  3.008533e-05  1.230049e+01 -6.326594e+01 -1.870524e-10
+     1.565557e-01  2.890481e-02 -2.250307e-12  1.261193e-02 -4.399937e-13
+     1.690423e-01  0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00
+     3.233926e+00 -3.172179e+00 -2.593759e+00  1.898630e-03 -1.643161e+03
+     0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00  1.637736e+03
+     1.592809e+03 -8.823187e+02 -8.405186e+02  1.035898e+02 -9.193261e+02
+     8.698588e+01  4.797871e+02 -1.643161e+03  1.273754e+00  1.806894e+02
+  1  0.000000e+00  3.008399e-05  1.230013e+01 -6.326478e+01 -9.972232e-10
+     1.565454e-01  2.890265e-02 -2.388957e-12  1.261172e-02 -5.287407e-12
+     1.690318e-01  0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00
+     3.141921e+00 -3.081955e+00 -2.519724e+00 -2.490787e-03 -1.626384e+03
+     0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00  1.615656e+03
+     1.567785e+03  9.141249e+02  8.247409e+02 -8.866589e+01 -9.375501e+02
+     9.660690e+01 -4.817391e+02 -1.626384e+03  1.237028e+00  1.761597e+02
