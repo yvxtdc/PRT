@@ -1,0 +1,20 @@
+#PID -1600
+#ErrMsgId 89
+#ErrMsgStr
+Lancement de l'analyse Analysis1
+#ErrMsgEnd
+#ErrMsgId 90
+#ErrMsgStr
+Lancement de la passe de solution 1 - Analysis1
+#ErrMsgEnd
+#ErrMsgId 661
+#ErrProAddr 2 17001 814 0 -1 
+#ErrMsgId 90
+#ErrMsgStr
+Lancement de la passe de solution 2 - Analysis1
+#ErrMsgEnd
+#ErrMsgId 91
+#ErrMsgStr
+Analyse Analysis1 terminée
+#ErrMsgEnd
+#ErrMsgId 92

@@ -1,0 +1,5 @@
+analysis type 0
+reactions 1 1 LoadSet1
+resultant  -4.70429e-14             1  -9.86231e-15
+nodes          0
+edges          0          5 no_cmpc
