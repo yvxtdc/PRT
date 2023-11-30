@@ -32,10 +32,11 @@ for i = 1:size(th3,2)
     
 end
 maximum(j)=max(Rcis);
-plot(th3*(180/pi),Rcis);
+plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4= ', num2str(180/pi*th4(j)),'°']);
 hold on;
 
 end
+legend('show');
 
 figure(1)
 hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
@@ -49,13 +50,13 @@ grid on;
 
 %title("Rcis")
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(2)
-plot(th4*(180/pi),maximum);
+plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
-%legend('show');
+legend('show');
 
-hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{4}$ [°]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -91,14 +92,14 @@ for i = 1:size(th3,2)
     Rcz(i) = Rc(3,1);
     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
-    
+
 end
 maximum(j)=max(Rcis);
-plot(th3*(180/pi),Rcis);
+plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4= ', num2str(180/pi*th4(j)),'°']);
 hold on;
 
 end
-
+legend('show');
 
 hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
 hYlabel=ylabel('$R_{cis}$ [N]');
@@ -113,9 +114,9 @@ grid on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(4)
-plot(th4*(180/pi),maximum);
+plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
-%legend('show');
+legend('show');
 
 hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
@@ -153,14 +154,14 @@ for i = 1:size(th3,2)
     Rcz(i) = Rc(3,1);
     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
-    
+
 end
 maximum(j)=max(Rcis);
-plot(th3*(180/pi),Rcis);
+plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4= ', num2str(180/pi*th4(j)),'°']);
 hold on;
 
 end
-
+legend('show');
 
 hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
 hYlabel=ylabel('$R_{cis}$ [N]');
@@ -175,9 +176,9 @@ grid on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(6)
-plot(th4*(180/pi),maximum);
+plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
-%legend('show');
+legend('show');
 
 hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
@@ -214,14 +215,14 @@ for i = 1:size(th3,2)
     Rcz(i) = Rc(3,1);
     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
-    
+
 end
 maximum(j)=max(Rcis);
-plot(th3*(180/pi),Rcis);
+plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4= ', num2str(180/pi*th4(j)),'°']);
 hold on;
 
 end
-
+legend('show');
 
 hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
 hYlabel=ylabel('$R_{cis}$ [N]');

@@ -11,7 +11,7 @@ th3_angle = 0:-0.25:-8.75;
 %th3_angle = -20:1:20;
 th3 = th3_angle*pi/180;
 
-th4_angle = 0:5:90;
+th4_angle = 0:15:90;
 th4 = th4_angle*pi/180;
 
 d1 = zeros(size(th3));
@@ -28,21 +28,24 @@ for i = 1:size(th3,2)
     Rcx(i) = Rc(1,1);
     Rcz(i) = Rc(3,1);
     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
-    Rcom(i)=abs(-Rcx(i)*sin(th4(j)) + Rcz(i)*cos(th4(j)));
+    Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
     
 end
-maximum(j)=max(Rcom);
-plot(th3*(180/pi),Rcom);
+maximum(j)=max(Rcis);
+plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4', num2str(j)]);
 hold on;
 
 end
+% Ajouter la légende en LaTeX
+%legend({'$\theta$'}, 'Interpreter', 'latex');
+legend('show');
 
 figure(1)
 hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
-hYlabel=ylabel('$R_{com}$ [N]');
+hYlabel=ylabel('$R_{cis}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
-hTitle=title('Evolution de $R_{com}$ selon $\theta_{3}$');
+hTitle=title('Evolution de $R_{cis}$ selon $\theta_{3}$');
 set(hTitle,'Interpreter','latex');
 grid on;
 
@@ -56,14 +59,14 @@ hold on;
 %legend('show');
 
 hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
-hYlabel=ylabel('$R_{comMAX}$ [N]');
+hYlabel=ylabel('$R_{cisMAX}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
-hTitle=title('Evolution de $R_{comMAX}$ selon $\theta_{4}$');
+hTitle=title('Evolution de $R_{cisMAX}$ selon $\theta_{4}$');
 set(hTitle,'Interpreter','latex');
 grid on;
 
-% 
+
 % %title("Rcis")
 % 
 % %plot(th4*(180/pi),maximum);
@@ -90,21 +93,21 @@ grid on;
 %     Rcx(i) = Rc(1,1);
 %     Rcz(i) = Rc(3,1);
 %     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
-%     Rcom(i)=abs(Rcx(i)*sin(th4(j)) + Rcz(i)*cos(th4(j)));
+%     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
 % 
 % end
-% maximum(j)=max(Rcom);
-% plot(th3*(180/pi),Rcom);
+% maximum(j)=max(Rcis);
+% plot(th3*(180/pi),Rcis);
 % hold on;
 % 
 % end
 % 
 % 
 % hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
-% hYlabel=ylabel('$R_{com}$ [N]');
+% hYlabel=ylabel('$R_{cis}$ [N]');
 % set(hXlabel,'Interpreter','latex');
 % set(hYlabel,'Interpreter','latex');
-% hTitle=title('Evolution de $R_{com}$ selon $\theta_{3}$');
+% hTitle=title('Evolution de $R_{cis}$ selon $\theta_{3}$');
 % set(hTitle,'Interpreter','latex');
 % grid on;
 % 
@@ -118,10 +121,10 @@ grid on;
 % %legend('show');
 % 
 % hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
-% hYlabel=ylabel('$R_{comMAX}$ [N]');
+% hYlabel=ylabel('$R_{cisMAX}$ [N]');
 % set(hXlabel,'Interpreter','latex');
 % set(hYlabel,'Interpreter','latex');
-% hTitle=title('Evolution de $R_{ccomMAX}$ selon $\theta_{4}$');
+% hTitle=title('Evolution de $R_{cisMAX}$ selon $\theta_{4}$');
 % set(hTitle,'Interpreter','latex');
 % grid on;
 % 
@@ -152,21 +155,21 @@ grid on;
 %     Rcx(i) = Rc(1,1);
 %     Rcz(i) = Rc(3,1);
 %     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
-%     Rcom(i)=abs(Rcx(i)*sin(th4(j)) + Rcz(i)*cos(th4(j)));
+%     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
 % 
 % end
-% maximum(j)=max(Rcom);
-% plot(th3*(180/pi),Rcom);
+% maximum(j)=max(Rcis);
+% plot(th3*(180/pi),Rcis);
 % hold on;
 % 
 % end
 % 
 % 
 % hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
-% hYlabel=ylabel('$R_{com}$ [N]');
+% hYlabel=ylabel('$R_{cis}$ [N]');
 % set(hXlabel,'Interpreter','latex');
 % set(hYlabel,'Interpreter','latex');
-% hTitle=title('Evolution de $R_{com}$ selon $\theta_{3}$');
+% hTitle=title('Evolution de $R_{cis}$ selon $\theta_{3}$');
 % set(hTitle,'Interpreter','latex');
 % grid on;
 % 
@@ -180,10 +183,10 @@ grid on;
 % %legend('show');
 % 
 % hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
-% hYlabel=ylabel('$R_{comMAX}$ [N]');
+% hYlabel=ylabel('$R_{cisMAX}$ [N]');
 % set(hXlabel,'Interpreter','latex');
 % set(hYlabel,'Interpreter','latex');
-% hTitle=title('Evolution de $R_{comMAX}$ selon $\theta_{4}$');
+% hTitle=title('Evolution de $R_{cisMAX}$ selon $\theta_{4}$');
 % set(hTitle,'Interpreter','latex');
 % grid on;
 % 
@@ -213,21 +216,21 @@ grid on;
 %     Rcx(i) = Rc(1,1);
 %     Rcz(i) = Rc(3,1);
 %     %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
-%     Rcom(i)=abs(Rcx(i)*sin(th4(j)) + Rcz(i)*cos(th4(j)));
+%     Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
 % 
 % end
-% maximum(j)=max(Rcom);
-% plot(th3*(180/pi),Rcom);
+% maximum(j)=max(Rcis);
+% plot(th3*(180/pi),Rcis);
 % hold on;
 % 
 % end
 % 
 % 
 % hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
-% hYlabel=ylabel('$R_{com}$ [N]');
+% hYlabel=ylabel('$R_{cis}$ [N]');
 % set(hXlabel,'Interpreter','latex');
 % set(hYlabel,'Interpreter','latex');
-% hTitle=title('Evolution de $R_{com}$ selon $\theta_{3}$');
+% hTitle=title('Evolution de $R_{cis}$ selon $\theta_{3}$');
 % set(hTitle,'Interpreter','latex');
 % grid on;
 % 
