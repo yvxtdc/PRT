@@ -56,7 +56,7 @@ plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{4}$ [°]');
+hXlabel=xlabel('Angle $\theta_{4}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -118,7 +118,7 @@ plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{4}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -180,7 +180,7 @@ plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
 hold on;
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{4}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{4}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cisMAX}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
