@@ -17,7 +17,7 @@ Rcz = d1;
 
 for i = 1:size(th3,2)
     [d1(i), th2(i)] = MGI(th3(i), L);
-    [P(i), Rc, Ro, F] = contraintes(d1(i), th2(i), th3(i), L, Ra);
+    [P(i), Rc, Ro, Rb] = contraintes(d1(i), th2(i), th3(i), L, 15);
     Rcx(i) = Rc(1,1);
     Rcz(i) = Rc(3,1);
 end
@@ -28,17 +28,21 @@ end
 plot(th3*(180/pi),d1);
 hold on;
 plot(th3*(180/pi),th2);
+title("d1 & th2")
 
 figure()
 plot(th3*(180/pi),Rcx);
 hold on;
 plot(th3*(180/pi),Rcz);
+title("Rcx & Rcz")
 
 figure()
 plot(th3*(180/pi),th2*(180/pi));
+title("th2")
 
 figure()
 plot(th3*(180/pi),-(th3+th2)*(180/pi)+90);
+title("th3-th2")
 
 
 
