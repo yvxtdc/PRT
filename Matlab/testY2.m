@@ -33,7 +33,7 @@ b = 5;
 %theta = 1;
 F = 25;
 
-t =0.8:0.8:8;
+t =0.8:0.4:4;
 
 VectRe = zeros(size(t));
 

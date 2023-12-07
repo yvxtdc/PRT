@@ -28,3 +28,19 @@ thCol = -round((max(atan(Rcx./Rcz)*180/pi)+min(atan(Rcx./Rcz)*180/pi))/2,1);
 fprintf("\n --- Etudes des forces ---\n\nAngle d'orientation de la liaison : %g° => Il faut prendre %g° ou %g°\n",[thCol floor(thCol) floor(thCol)+1]);
 fprintf("Contrainte max cisaillement : %gN (pour %g°) ou %gN (pour %g°)\n",[round(max(abs(Rcx*cos(floor(thCol)*pi/180) + Rcz*sin(floor(thCol)*pi/180))),1) floor(thCol) round(max(abs(Rcx*cos((floor(thCol)+1)*pi/180) + Rcz*sin((floor(thCol)+1)*pi/180))),1) floor(thCol)+1]);
 fprintf("Contrainte max compression : %gN (pour %g°) ou %gN (pour %g°)\n",[round(max(abs(-Rcx*sin(floor(thCol)*pi/180) + Rcz*cos(floor(thCol)*pi/180))),1) floor(thCol) round(max(abs(-Rcx*sin((floor(thCol)+1)*pi/180) + Rcz*cos((floor(thCol)+1)*pi/180))),1) floor(thCol)+1]);
+
+
+
+e = 0.1:0.1:1;
+e = e./1000;
+K = zeros(size(e,2),1);
+r = zeros(size(e,2),1);
+for i = 1:size(e,2)
+    [K(i), r(i)] = optimisationRaideurCol(100e6, 70e9, 1.2, e(i), 5e-3, 4*pi/180);
+end
+plot(e*1000,r*1000)
+%r = optimisationCol(40e6, 3e9, 1.2, e(2), 5e-3, 4.3*pi/180,25)
+
+
+
+
