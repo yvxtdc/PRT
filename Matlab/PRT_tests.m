@@ -1,13 +1,11 @@
 close all;
 clc;
-clf;
 
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
 Ch = 15;
-th3_angle = 0:-0.25:-8.75;
-%th3_angle = -20:1:20;
-th3 = th3_angle*pi/180;
+th3 = linspace(-atan(L(5)/L(4)), 0,100);
+fprintf(" --- Evolution des variables articulaires ---\n\nPlage de th3 = [%g° %g°] => dth3 = %g°\n",[round(-atan(L(5)/L(4))*(180/pi),1) 0 round(atan(L(5)/L(4))*(180/pi),1)]);
 
 d1 = zeros(size(th3));
 th2 = d1;
@@ -22,31 +20,11 @@ for i = 1:size(th3,2)
     Rcz(i) = Rc(3,1);
 end
 
+fprintf("Plage de d1 = [%g %g]mm => dd1 = %gmm\n",[round(min(d1)*1000,1) round(max(d1)*1000,1) round(max(d1)*1000-min(d1)*1000,1)]);
+fprintf("Plage de th2 = [%g° %g°] => dth2 = %g°\n",[round(min(th2)*(180/pi),1) round(max(th2)*(180/pi),1) round(max(th2)*(180/pi)-min(th2)*(180/pi),1)]);
+fprintf("Plage de th23 (angle liaison en B) = [%g° %g°] => dth23 = %g°\n",[round(min(-(th3+th2))*(180/pi)+90,1) round(max(-(th3+th2))*(180/pi)+90,1) round(max(-(th3+th2))*(180/pi)-min(-(th3+th2))*(180/pi),1)]);
 
-%drawArm(d1, th21, th31, L, Ch);
-
-plot(th3*(180/pi),d1);
-hold on;
-plot(th3*(180/pi),th2);
-title("d1 & th2")
-
-figure()
-plot(th3*(180/pi),Rcx);
-hold on;
-plot(th3*(180/pi),Rcz);
-title("Rcx & Rcz")
-
-figure()
-plot(th3*(180/pi),th2*(180/pi));
-title("th2")
-
-figure()
-plot(th3*(180/pi),-(th3+th2)*(180/pi)+90);
-title("th3-th2")
-
-
-
-figure()
-th3 = 10*pi/180;
-[d1, th2] = MGI(th3, L);
-drawArm(d1, th2, th3, L, -15, false);
+thCol = -round((max(atan(Rcx./Rcz)*180/pi)+min(atan(Rcx./Rcz)*180/pi))/2,1);
+fprintf("\n --- Etudes des forces ---\n\nAngle d'orientation de la liaison : %g° => Il faut prendre %g° ou %g°\n",[thCol floor(thCol) floor(thCol)+1]);
+fprintf("Contrainte max cisaillement : %gN (pour %g°) ou %gN (pour %g°)\n",[round(max(abs(Rcx*cos(floor(thCol)*pi/180) + Rcz*sin(floor(thCol)*pi/180))),1) floor(thCol) round(max(abs(Rcx*cos((floor(thCol)+1)*pi/180) + Rcz*sin((floor(thCol)+1)*pi/180))),1) floor(thCol)+1]);
+fprintf("Contrainte max compression : %gN (pour %g°) ou %gN (pour %g°)\n",[round(max(abs(-Rcx*sin(floor(thCol)*pi/180) + Rcz*cos(floor(thCol)*pi/180))),1) floor(thCol) round(max(abs(-Rcx*sin((floor(thCol)+1)*pi/180) + Rcz*cos((floor(thCol)+1)*pi/180))),1) floor(thCol)+1]);
