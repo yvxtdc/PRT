@@ -3,35 +3,33 @@ clear all;
 clc;
 clf;
 
-
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
-Ch = 15;
-th3_angle = 0:-0.25:-8.75;
-%th3_angle = -20:1:20;
-th3 = th3_angle*pi/180;
+th3_angle = 0:-0.25:-8.75; %plage de valeur theta3 de notre systeme
+th3 = th3_angle*pi/180;%en radiant
 
-th4_angle = 0:15:90;
-th4 = th4_angle*pi/180;
+th4_angle = 45:0.2:47; %angle theta4
+th4 = th4_angle*pi/180;%en radiant
 
+%initialisation des paramètres de base
 d1 = zeros(size(th3));
 th2 = d1;
 P = d1;
 Rcx = d1;
 Rcz = d1;
 
-for j=1:size(th4,2)
+for j=1:size(th4,2) %on fait varier theta4 sur notre plage d'étude
 
-for i = 1:size(th3,2)
-    [d1(i), th2(i)] = MGI(th3(i), L);
-    [P(i), Rc, Ro, Rb] = contraintes(d1(i), th2(i), th3(i), L, 15);
-    Rcx(i) = Rc(1,1);
-    Rcz(i) = Rc(3,1);
-    %Rcis(i)=sqrt( (Rcx(i)*cos(th4(j)))^2 + (Rcz(i)*sin(th4(j)))^2 );
-    Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j)));
+for i = 1:size(th3,2) %on fait varier theta3 sur notre plage d'étude
+    [d1(i), th2(i)] = MGI(th3(i), L); %MGI du système pour chaque theta3
+    [P(i), Rc, Ro, Rb] = contraintes(d1(i), th2(i), th3(i), L, 15);%Forces du système pour chaque theta3
+    Rcx(i) = Rc(1,1); %Résultante de compression dans la base 0
+    Rcz(i) = Rc(3,1);%Résultante de cisaillement dans la base 0
+    Rcis(i)=abs(Rcx(i)*cos(th4(j)) + Rcz(i)*sin(th4(j))); %calcul du cisaillement dans la base 4 pour chaque theta3
     
 end
-maximum(j)=max(Rcis);
+%graphes
+maximum(j)=max(Rcis); 
 plot(th3*(180/pi), Rcis, 'DisplayName', ['\theta_4= ', num2str(180/pi*th4(j)),'°']);
 hold on;
 
@@ -101,7 +99,7 @@ hold on;
 end
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{3}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cis}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -163,7 +161,7 @@ hold on;
 end
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{3}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cis}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -224,7 +222,7 @@ hold on;
 end
 legend('show');
 
-hXlabel=xlabel('Angle $\theta_{3}$ [rad]');
+hXlabel=xlabel('Angle $\theta_{3}$ [$^\circ$]');
 hYlabel=ylabel('$R_{cis}$ [N]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
