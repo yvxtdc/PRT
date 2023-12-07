@@ -52,7 +52,7 @@ grid on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(2)
-plot(th4*(180/pi),maximum, 'DisplayName', ['R_{cisMAX}']);
+plot(th4*(180/pi),maximum, 'DisplayName', 'R_{cisMAX}');
 hold on;
 legend('show');
 
