@@ -5,7 +5,7 @@ clc;
 
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
-th3_angle = 0:-0.25:-8.75;
+th3_angle = 0:-0.25:-4;
 th3 = th3_angle*pi/180;
 
 d1 = zeros(size(th3));
@@ -26,18 +26,18 @@ end
 
 %%
 
-materiau = 'PLA';
+materiau = 'ABS';
 type = 'col';
 r = ;
 b = 5;
 %theta = 1;
 F = 25;
 
-t =0.8:0.8:8;
+t =0.8:0.4:4;
 
 VectRe = zeros(size(t));
 
-figure(2)
+figure(1)
 
 for j=1:size(t,2)
 
@@ -45,13 +45,13 @@ for i = 1:size(th3,2)
 VonMises(i)=cVonMises(materiau, type, t(j), r, b, th3(i), L, F);  
 end
 
-plot(th3*180/pi(), VonMises, 'DisplayName', ['t = ', num2str(t(j)),'mm']);
+plot(th3, VonMises, 'DisplayName', ['t = ', num2str(t(j)),'mm']);
 hold on;
 
 end
 
 legend('show');
-hXlabel=xlabel('Angle $\theta_3$ [$^\circ$]');
+hXlabel=xlabel('Angle $\theta_3$ [rad]');
 hYlabel=ylabel('Von Mises $\sigma_{VM}$ [MPa]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
@@ -72,8 +72,8 @@ elseif strcmp(materiau, 'ABS')
 end
 
 for i=1:size(th3,2)
-VectRe(i) = Re;
+VectRe(i) = Re/1.2;
 end
 
-plot(th3*180/pi(), VectRe,'DisplayName', 'Re')
+plot(th3, VectRe,'DisplayName', 'Re')
 

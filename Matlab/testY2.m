@@ -5,7 +5,7 @@ clc;
 
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
-th3_angle = 0:-0.25:-8.75;
+th3_angle = 0:0.25:4;
 th3 = th3_angle*pi/180;
 
 d1 = zeros(size(th3));
@@ -23,21 +23,20 @@ for i = 1:size(th3,2)
 end
 
 
-
 %%
 
-materiau = 'PLA';
+materiau = 'aluminium';
 type = 'col';
-r = 2;
+r = 579;
 b = 5;
 %theta = 1;
 F = 25;
 
-t =0.8:0.8:8;
+t =0.8:0.4:4;
 
 VectRe = zeros(size(t));
 
-figure(2)
+figure(1)
 
 for j=1:size(t,2)
 
@@ -62,7 +61,7 @@ grid on;
 %limite élastique:
 
 if strcmp(materiau, 'aluminium')
-    Re = 40;
+    Re = 100;
 elseif strcmp(materiau, 'acier')
     Re = 250;
 elseif strcmp(materiau, 'PLA')
@@ -72,8 +71,8 @@ elseif strcmp(materiau, 'ABS')
 end
 
 for i=1:size(th3,2)
-VectRe(i) = Re;
+VectRe(i) = Re/1.2;
 end
 
-plot(th3, VectRe,'DisplayName', 'Re')
+plot(th3, VectRe,'DisplayName', 'Re', 'Color', 'red');
 
