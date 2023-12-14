@@ -2,7 +2,6 @@ close all;
 clear all;
 clc;
 
-
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
 th3_angle = 0:0.25:4;
@@ -21,10 +20,7 @@ for i = 1:size(th3,2)
     Rcz(i) = Rc(3,1);
     
 end
-
-
 %%
-
 materiau = 'PLA';
 type = 'col';
 
@@ -48,7 +44,7 @@ elseif strcmp(materiau, 'ABS')
     Re = 40;
 end
 
-%Vecteur temps
+%Vecteur thickness
 t =0.8:0.4:4;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,8 +77,6 @@ hTitle=title('Evolution de $\sigma_{VM}$ selon $\theta_{3}$');
 set(hTitle,'Interpreter','latex');
 grid on;
 
-
-
 for i=1:size(th3,2)
 VectRe(i) = Re/coefSecu;
 end
@@ -104,7 +98,6 @@ if strcmp(type, 'col')
 elseif strcmp(type, 'lames')
     disp('Liaison choisie: lames.');
 end
-
 
 if r>=5
 if exist('ValeurPossible', 'var') == 1
