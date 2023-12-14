@@ -34,8 +34,6 @@ b = 5;
 F = 25;
 L=1;
 
-coefSecu=1.2;
-
 %limite élastique:
 
 if strcmp(materiau, 'aluminium')
@@ -65,8 +63,8 @@ plot(th3, VonMises, 'DisplayName', ['t = ', num2str(t(j)),'mm']);
 hold on;
 
 maxVonMises(j)=max(VonMises);
-if maxVonMises(j)<Re/coefSecu
-ValeurPossible(j)=t(j);
+if maxmaxVonMises(j)<Re
+
 end    
 
 end
@@ -84,38 +82,15 @@ grid on;
 
 
 for i=1:size(th3,2)
-VectRe(i) = Re/coefSecu;
+VectRe(i) = Re/1.2;
 end
 
 plot(th3, VectRe,'DisplayName', 'Re', 'Color', 'red');
 
-if strcmp(materiau, 'aluminium')
-    disp('Materiau choisi: aluminium.');
-elseif strcmp(materiau, 'acier')
-    disp('Materiau choisi: acier.');
-elseif strcmp(materiau, 'PLA')
-    disp('Materiau choisi: PLA.');
-elseif strcmp(materiau, 'ABS')
-    disp('Materiau choisi: ABS.');
-end
-
-if strcmp(type, 'col')
-    disp('Liaison choisie: col.');
-elseif strcmp(type, 'lames')
-    disp('Liaison choisie: lames.');
-end
+%%
 
 
-if r>=5
-if exist('ValeurPossible', 'var') == 1
-disp(['r en [mm]: ' num2str(r)]);
-disp(['Voici les valeurs des epaisseurs possibles en [mm]: ' num2str(ValeurPossible)]);
-else 
-disp('Configuration impossible dans le domaine plastique')
-end 
-else
-disp('Configuration impossible: rayon trop grand')
-end 
+
 
 
 
