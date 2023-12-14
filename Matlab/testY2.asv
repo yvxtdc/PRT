@@ -21,7 +21,7 @@ for i = 1:size(th3,2)
     
 end
 %%
-materiau = 'aluminium';
+materiau = 'PLA';
 type = 'col';
 
 %Paramètres
@@ -40,12 +40,11 @@ elseif strcmp(materiau, 'acier')
     Re = 250;
 elseif strcmp(materiau, 'PLA')
     Re = 60;
+    t =0.8:0.4:4;
 elseif strcmp(materiau, 'ABS')
     Re = 40;
+    t =0.8:0.4:4;
 end
-
-%Vecteur thickness
-t =0.8:0.4:4;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 VectRe = zeros(size(t));
