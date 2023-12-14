@@ -99,7 +99,7 @@ elseif strcmp(type, 'lames')
     disp('Liaison choisie: lames.');
 end
 
-if r>=5
+if r>=5 
 if exist('ValeurPossible', 'var') == 1
 disp(['r en [mm]: ' num2str(r)]);
 disp(['Voici les valeurs des epaisseurs possibles en [mm]: ' num2str(ValeurPossible)]);
@@ -110,7 +110,7 @@ else
 disp('Configuration impossible: rayon trop grand')
 end 
 
-
+%h= 2*r+t-2*sqrt{r^2-(r-x)^2}
 
 
 
