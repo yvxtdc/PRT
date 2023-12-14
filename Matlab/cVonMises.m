@@ -20,7 +20,7 @@ elseif strcmp(type, 'lames')
     disp('Liaison choisie: lames.');
 end
 
-Cf = cf(type, E, r, t, theta, L);
+Cf = cf(type, E, r ,t, theta, L);
 Cc = cc(type, F, b, t);
 
 %VonMises = sqrt(Cf^2+Cc^2);

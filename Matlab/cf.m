@@ -5,7 +5,7 @@ Cf = (4*E)/(3*pi)*sqrt(t/r)*theta;
 %disp('Liaison choisie: ''col''.');
 
 elseif strcmp(type, 'lames')
-Cf = (E*theta)/(L)*theta;
+Cf = (E/L)*t*theta;
 %disp('Liaison choisie: ''lames''.');
 
 else 

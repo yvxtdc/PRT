@@ -25,15 +25,19 @@ end
 
 %%
 
-materiau = 'aluminium';
+materiau = 'PLA';
 type = 'col';
-r = 579;
-b = 5;
-%theta = 1;
-F = 25;
 
+%Paramètres
+r = 5;
+b = 5;
+F = 25;
+L=1;
+
+%Vecteur temps
 t =0.8:0.4:4;
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 VectRe = zeros(size(t));
 
 figure(1)
@@ -49,6 +53,7 @@ hold on;
 
 end
 
+%affichage
 legend('show');
 hXlabel=xlabel('Angle $\theta_3$ [rad]');
 hYlabel=ylabel('Von Mises $\sigma_{VM}$ [MPa]');
@@ -75,4 +80,27 @@ VectRe(i) = Re/1.2;
 end
 
 plot(th3, VectRe,'DisplayName', 'Re', 'Color', 'red');
+
+%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
