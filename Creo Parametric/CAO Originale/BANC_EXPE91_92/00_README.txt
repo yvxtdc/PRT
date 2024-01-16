@@ -1,0 +1,1 @@
+Pour ouvirr l'assemblage, ouvrir le fichier bifcac1_000000_carac_nvg1.asm
