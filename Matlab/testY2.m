@@ -21,7 +21,7 @@ for i = 1:size(th3,2)
     
 end
 %%
-materiau = 'PLA';
+materiau = 'vero';
 type = 'col';
 
 %Paramètres
@@ -42,6 +42,8 @@ elseif strcmp(materiau, 'PLA')
     Re = 60;
 elseif strcmp(materiau, 'ABS')
     Re = 40;
+elseif strcmp(materiau, 'vero')
+    Re = 50;
 end
 
 %Vecteur thickness
@@ -55,13 +57,13 @@ figure(1)
 for j=1:size(t,2)
 
 for i = 1:size(th3,2)
-VonMises(i)=cVonMises(materiau, type, t(j), r, b, th3(i), L, F);  
+max1(i)=cMAX(materiau, type, t(j), r, b, th3(i), L, F);  
 end
-plot(th3, VonMises, 'DisplayName', ['t = ', num2str(t(j)),'mm']);
+plot(th3, max1, 'DisplayName', ['t = ', num2str(t(j)),'mm']);
 hold on;
 
-maxVonMises(j)=max(VonMises);
-if maxVonMises(j)<Re/coefSecu
+max2(j)=max(max1);
+if max2(j)<Re/coefSecu
 ValeurPossible(j)=t(j);
 end    
 
@@ -70,10 +72,10 @@ end
 %affichage
 legend('show');
 hXlabel=xlabel('Angle $\theta_3$ [rad]');
-hYlabel=ylabel('Von Mises $\sigma_{VM}$ [MPa]');
+hYlabel=ylabel(' $\sigma$ [MPa]');
 set(hXlabel,'Interpreter','latex');
 set(hYlabel,'Interpreter','latex');
-hTitle=title('Evolution de $\sigma_{VM}$ selon $\theta_{3}$');
+hTitle=title('Evolution de $\sigma$ selon $\theta_{3}$');
 set(hTitle,'Interpreter','latex');
 grid on;
 
@@ -91,7 +93,11 @@ elseif strcmp(materiau, 'PLA')
     disp('Materiau choisi: PLA.');
 elseif strcmp(materiau, 'ABS')
     disp('Materiau choisi: ABS.');
+elseif strcmp(materiau, 'vero')
+    disp('Materiau choisi: vero.');
 end
+
+
 
 if strcmp(type, 'col')
     disp('Liaison choisie: col.');
