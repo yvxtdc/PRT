@@ -1,1 +1,0 @@
-Pour ouvrir l'assemblage, ouvrir bifpoc1_000000_assemblage_poc1.asm

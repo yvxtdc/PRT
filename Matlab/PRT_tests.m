@@ -3,9 +3,16 @@ clc;
 
 L = [25e-3 56e-3 20e-3 65e-3 9.8e-3 50e-3 60e-3];
 
+%L = [25e-3 52e-3 20e-3 65e-3 17.8e-3 42e-3 60e-3];
+
 Ch = 15;
 th3 = linspace(-atan(L(5)/L(4)), 0,100);
 fprintf(" --- Evolution des variables articulaires ---\n\nPlage de th3 = [%g° %g°] => dth3 = %g°\n",[round(-atan(L(5)/L(4))*(180/pi),1) 0 round(atan(L(5)/L(4))*(180/pi),1)]);
+
+
+[d1, th2] = MGI(th3(1), L);
+drawArm(d1, th2, th3(1), L, -15, true);
+figure()
 
 d1 = zeros(size(th3));
 th2 = d1;
