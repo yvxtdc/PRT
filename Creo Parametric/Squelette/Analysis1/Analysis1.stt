@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Fichier journal de l'étude de conception "Analysis1"
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 ----------------------------------------
 
 Commande du solveur avec les options de ligne de commande spécifiées :
@@ -9,20 +9,20 @@ Commande du solveur avec les options de ligne de commande spécifiées :
  C:\Program Files\PTC\Creo 8.0.4.0\Common Files\mech\x86e_win64\bin\msengine.exe  Analysis1  -i  .  -w  .  -solram  512  -sturm  default  -nl_ldc  -num_threads  ALL  -results_io_cache_size  1024 
 
 Commencer la création d'une base de données pour l'étude de conception
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.31
-   Temps CPU                      (sec) :       0.05
-   Utilisation de la mémoire       (Ko) :      64664
+Wed Jan 17, 2024   15:08:14
+   Temps écoulé                   (sec) :       0.56
+   Temps CPU                      (sec) :       0.03
+   Utilisation de la mémoire       (Ko) :      69007
    Util. disque du rép. de travail (Ko) :          0
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer la vérification d'erreurs en mode intégré
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.32
-   Temps CPU                      (sec) :       0.05
-   Utilisation de la mémoire       (Ko) :      64664
+Wed Jan 17, 2024   15:08:14
+   Temps écoulé                   (sec) :       0.57
+   Temps CPU                      (sec) :       0.03
+   Utilisation de la mémoire       (Ko) :      69007
    Util. disque du rép. de travail (Ko) :          0
 
 Vérification du modèle avant création des éléments...
@@ -30,15 +30,17 @@ Ces vérifications tiennent compte du fait qu'AutoGEM
 créera automatiquement des éléments dans les volumes dotés de propriétés de
 matériau, sur les surfaces dotées de propriétés de type coque et sur les courbes
 dotées de propriétés de section de coque.
-
+La composante rotationnelle de la restriction spécifiée n'aura
+aucun effet parce que la surface à laquelle elle s'applique
+n'est associée à aucune coque.
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer à générer les éléments
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.33
-   Temps CPU                      (sec) :       0.05
-   Utilisation de la mémoire       (Ko) :      67452
+Wed Jan 17, 2024   15:08:14
+   Temps écoulé                   (sec) :       0.57
+   Temps CPU                      (sec) :       0.03
+   Utilisation de la mémoire       (Ko) :      69124
    Util. disque du rép. de travail (Ko) :          0
 
 Copie des éléments depuis un modèle d'étude existant ...
@@ -50,273 +52,245 @@ Il existe déjà un jeu complet d'éléments.
 OK
 
 
-   Temps écoulé par étape (sec) :       0.38
-   Temps CPU par étape    (sec) :       0.30
+   Temps écoulé par étape (sec) :       0.32
+   Temps CPU par étape    (sec) :       0.28
 
 Commencer la vérification d'erreurs en mode intégré
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.70
-   Temps CPU                      (sec) :       0.34
-   Utilisation de la mémoire       (Ko) :      85639
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       0.89
+   Temps CPU                      (sec) :       0.31
+   Utilisation de la mémoire       (Ko) :      87175
    Util. disque du rép. de travail (Ko) :          0
 Vérification du modèle après création des éléments...
-Le modèle ne contient aucune erreur.
-   Temps écoulé par étape (sec) :       0.07
-   Temps CPU par étape    (sec) :       0.03
-
-Démarrage du comptage du solveur
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.77
-   Temps CPU                      (sec) :       0.37
-   Utilisation de la mémoire       (Ko) :      85639
-   Util. disque du rép. de travail (Ko) :          0
-
-   Temps écoulé par étape (sec) :       0.08
-   Temps CPU par étape    (sec) :       0.03
-
-Commencer l'analyse : "Analysis1"
-Thu Nov 30, 2023   11:05:30
-   Temps écoulé                   (sec) :       0.85
-   Temps CPU                      (sec) :       0.41
-   Utilisation de la mémoire       (Ko) :      99131
-   Util. disque du rép. de travail (Ko) :          0
-
-   Temps écoulé par étape (sec) :       0.15
-   Temps CPU par étape    (sec) :       0.11
-
-Commencer la calcul de masse
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.00
-   Temps CPU                      (sec) :       0.52
-   Utilisation de la mémoire       (Ko) :      99131
-   Util. disque du rép. de travail (Ko) :          0
-
+La composante rotationnelle de la restriction spécifiée n'aura
+aucun effet parce que la surface à laquelle elle s'applique
+n'est associée à aucune coque.Le modèle ne contient aucune erreur.
    Temps écoulé par étape (sec) :       0.06
    Temps CPU par étape    (sec) :       0.05
 
-Démarrer l'itération 1
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.06
-   Temps CPU                      (sec) :       0.56
-   Utilisation de la mémoire       (Ko) :      99131
+Démarrage du comptage du solveur
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       0.94
+   Temps CPU                      (sec) :       0.36
+   Utilisation de la mémoire       (Ko) :      87179
    Util. disque du rép. de travail (Ko) :          0
 
-   Temps écoulé par étape (sec) :       0.04
+   Temps écoulé par étape (sec) :       0.08
+   Temps CPU par étape    (sec) :       0.05
+
+Commencer l'analyse : "Analysis1"
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.02
+   Temps CPU                      (sec) :       0.41
+   Utilisation de la mémoire       (Ko) :     102477
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.10
+   Temps CPU par étape    (sec) :       0.09
+
+Commencer la calcul de masse
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.12
+   Temps CPU                      (sec) :       0.50
+   Utilisation de la mémoire       (Ko) :     102477
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.01
+   Temps CPU par étape    (sec) :       0.00
+
+Démarrer l'itération 1
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.13
+   Temps CPU                      (sec) :       0.50
+   Utilisation de la mémoire       (Ko) :     102477
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.03
    Temps CPU par étape    (sec) :       0.02
 
 Commencer le calcul des éléments, passe 1
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.10
-   Temps CPU                      (sec) :       0.58
-   Utilisation de la mémoire       (Ko) :     114429
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.16
+   Temps CPU                      (sec) :       0.52
+   Utilisation de la mémoire       (Ko) :     117749
    Util. disque du rép. de travail (Ko) :          0
 
-   Temps écoulé par étape (sec) :       0.12
-   Temps CPU par étape    (sec) :       0.11
+   Temps écoulé par étape (sec) :       0.14
+   Temps CPU par étape    (sec) :       0.16
 
 Commencer l'assemblage de la matrice globale, passe 1
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.21
-   Temps CPU                      (sec) :       0.69
-   Utilisation de la mémoire       (Ko) :     117695
-   Util. disque du rép. de travail (Ko) :      36864
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.31
+   Temps CPU                      (sec) :       0.67
+   Utilisation de la mémoire       (Ko) :     121059
+   Util. disque du rép. de travail (Ko) :      35840
 
-   Temps écoulé par étape (sec) :       0.06
-   Temps CPU par étape    (sec) :       0.02
+   Temps écoulé par étape (sec) :       0.01
+   Temps CPU par étape    (sec) :       0.00
 
-Démarrage du pas de temps 0 of 1:   0.00000e+00
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.28
-   Temps CPU                      (sec) :       0.70
-   Utilisation de la mémoire       (Ko) :     136117
-   Util. disque du rép. de travail (Ko) :      36864
+Commencer la résolution des équations, passe 1
+Wed Jan 17, 2024   15:08:15
+   Temps écoulé                   (sec) :       1.32
+   Temps CPU                      (sec) :       0.67
+   Utilisation de la mémoire       (Ko) :     123193
+   Util. disque du rép. de travail (Ko) :      35840
 
-   Temps écoulé par étape (sec) :       0.45
-   Temps CPU par étape    (sec) :       0.30
+   Temps écoulé par étape (sec) :       0.42
+   Temps CPU par étape    (sec) :       0.37
 
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:31
-   Temps écoulé                   (sec) :       1.73
-   Temps CPU                      (sec) :       1.00
-   Utilisation de la mémoire       (Ko) :     142434
-   Util. disque du rép. de travail (Ko) :      36864
+Commencer les calculs de charge
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       1.74
+   Temps CPU                      (sec) :       1.05
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
 
-   Temps écoulé par étape (sec) :       0.54
-   Temps CPU par étape    (sec) :       0.08
+   Temps écoulé par étape (sec) :       0.01
+   Temps CPU par étape    (sec) :       0.00
 
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:32
-   Temps écoulé                   (sec) :       2.27
-   Temps CPU                      (sec) :       1.08
-   Utilisation de la mémoire       (Ko) :     159159
-   Util. disque du rép. de travail (Ko) :      36864
+Commencer les calculs de post-traitement, passe 1
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       1.75
+   Temps CPU                      (sec) :       1.05
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
 
-   Temps écoulé par étape (sec) :       0.09
-   Temps CPU par étape    (sec) :       0.06
-
-Commencer la passe de vérification de convergence 1
-Thu Nov 30, 2023   11:05:32
-   Temps écoulé                   (sec) :       2.36
-   Temps CPU                      (sec) :       1.14
-   Utilisation de la mémoire       (Ko) :     159159
-   Util. disque du rép. de travail (Ko) :      36864
-
-   Temps écoulé par étape (sec) :       0.34
+   Temps écoulé par étape (sec) :       0.37
    Temps CPU par étape    (sec) :       0.28
 
-Démarrage du pas de temps 1 of 1:   1.00000e+00
-Thu Nov 30, 2023   11:05:32
-   Temps écoulé                   (sec) :       2.69
-   Temps CPU                      (sec) :       1.42
-   Utilisation de la mémoire       (Ko) :     159159
-   Util. disque du rép. de travail (Ko) :      36864
-
-   Temps écoulé par étape (sec) :       8.32
-   Temps CPU par étape    (sec) :       6.22
-
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:41
-   Temps écoulé                   (sec) :      11.01
-   Temps CPU                      (sec) :       7.64
-   Utilisation de la mémoire       (Ko) :     664430
-   Util. disque du rép. de travail (Ko) :      36864
-
-   Temps écoulé par étape (sec) :       0.61
-   Temps CPU par étape    (sec) :       0.36
-
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:41
-   Temps écoulé                   (sec) :      11.63
-   Temps CPU                      (sec) :       8.00
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      36864
-
-   Temps écoulé par étape (sec) :       0.09
-   Temps CPU par étape    (sec) :       0.08
-
 Commencer la passe de vérification de convergence 1
-Thu Nov 30, 2023   11:05:41
-   Temps écoulé                   (sec) :      11.71
-   Temps CPU                      (sec) :       8.08
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      36864
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.12
+   Temps CPU                      (sec) :       1.33
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
 
-   Temps écoulé par étape (sec) :       0.53
-   Temps CPU par étape    (sec) :       0.42
+   Temps écoulé par étape (sec) :       0.16
+   Temps CPU par étape    (sec) :       0.13
+
+Commencer calculs d'énergie de déformation
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.28
+   Temps CPU                      (sec) :       1.45
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
+
+   Temps écoulé par étape (sec) :       0.05
+   Temps CPU par étape    (sec) :       0.03
 
 Démarrer l'itération 2
-Thu Nov 30, 2023   11:05:42
-   Temps écoulé                   (sec) :      12.24
-   Temps CPU                      (sec) :       8.50
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      37888
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.33
+   Temps CPU                      (sec) :       1.48
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
 
    Temps écoulé par étape (sec) :       0.03
    Temps CPU par étape    (sec) :       0.02
 
 Commencer le calcul des éléments, passe 2
-Thu Nov 30, 2023   11:05:42
-   Temps écoulé                   (sec) :      12.27
-   Temps CPU                      (sec) :       8.52
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      37888
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.35
+   Temps CPU                      (sec) :       1.50
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      35840
 
    Temps écoulé par étape (sec) :       0.08
-   Temps CPU par étape    (sec) :       0.05
-
-Commencer l'assemblage de la matrice globale, passe 2
-Thu Nov 30, 2023   11:05:42
-   Temps écoulé                   (sec) :      12.35
-   Temps CPU                      (sec) :       8.56
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      44032
-
-   Temps écoulé par étape (sec) :       0.06
    Temps CPU par étape    (sec) :       0.03
 
-Démarrage du pas de temps 0 of 1:   0.00000e+00
-Thu Nov 30, 2023   11:05:42
-   Temps écoulé                   (sec) :      12.41
-   Temps CPU                      (sec) :       8.59
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      44032
+Commencer l'assemblage de la matrice globale, passe 2
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.43
+   Temps CPU                      (sec) :       1.53
+   Utilisation de la mémoire       (Ko) :     639491
+   Util. disque du rép. de travail (Ko) :      38912
 
-   Temps écoulé par étape (sec) :       0.45
-   Temps CPU par étape    (sec) :       0.30
+   Temps écoulé par étape (sec) :       0.01
+   Temps CPU par étape    (sec) :       0.00
 
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:42
-   Temps écoulé                   (sec) :      12.86
-   Temps CPU                      (sec) :       8.89
-   Utilisation de la mémoire       (Ko) :     678919
-   Util. disque du rép. de travail (Ko) :      44032
+Commencer la résolution des équations, passe 2
+Wed Jan 17, 2024   15:08:16
+   Temps écoulé                   (sec) :       2.44
+   Temps CPU                      (sec) :       1.53
+   Utilisation de la mémoire       (Ko) :     641688
+   Util. disque du rép. de travail (Ko) :      38912
 
-   Temps écoulé par étape (sec) :       0.54
-   Temps CPU par étape    (sec) :       0.08
+   Temps écoulé par étape (sec) :       0.37
+   Temps CPU par étape    (sec) :       0.25
 
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:43
-   Temps écoulé                   (sec) :      13.40
-   Temps CPU                      (sec) :       8.97
-   Utilisation de la mémoire       (Ko) :     679943
-   Util. disque du rép. de travail (Ko) :      44032
+Commencer les calculs de charge
+Wed Jan 17, 2024   15:08:17
+   Temps écoulé                   (sec) :       2.81
+   Temps CPU                      (sec) :       1.78
+   Utilisation de la mémoire       (Ko) :     641688
+   Util. disque du rép. de travail (Ko) :      38912
 
-   Temps écoulé par étape (sec) :       0.12
-   Temps CPU par étape    (sec) :       0.08
+   Temps écoulé par étape (sec) :       0.01
+   Temps CPU par étape    (sec) :       0.00
 
-Démarrage du pas de temps 1 of 1:   1.00000e+00
-Thu Nov 30, 2023   11:05:43
-   Temps écoulé                   (sec) :      13.52
-   Temps CPU                      (sec) :       9.05
-   Utilisation de la mémoire       (Ko) :     679943
-   Util. disque du rép. de travail (Ko) :      44032
+Commencer les calculs de post-traitement, passe 2
+Wed Jan 17, 2024   15:08:17
+   Temps écoulé                   (sec) :       2.82
+   Temps CPU                      (sec) :       1.78
+   Utilisation de la mémoire       (Ko) :     641688
+   Util. disque du rép. de travail (Ko) :      38912
 
-   Temps écoulé par étape (sec) :       4.60
-   Temps CPU par étape    (sec) :       3.17
-
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:48
-   Temps écoulé                   (sec) :      18.12
-   Temps CPU                      (sec) :      12.22
-   Utilisation de la mémoire       (Ko) :     679943
-   Util. disque du rép. de travail (Ko) :      44032
-
-   Temps écoulé par étape (sec) :       0.60
-   Temps CPU par étape    (sec) :       0.33
-
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:48
-   Temps écoulé                   (sec) :      18.72
-   Temps CPU                      (sec) :      12.55
-   Utilisation de la mémoire       (Ko) :     681199
-   Util. disque du rép. de travail (Ko) :      44032
-
-   Temps écoulé par étape (sec) :       0.11
-   Temps CPU par étape    (sec) :       0.09
+   Temps écoulé par étape (sec) :       0.30
+   Temps CPU par étape    (sec) :       0.27
 
 Commencer la passe de vérification de convergence 2
-Thu Nov 30, 2023   11:05:48
-   Temps écoulé                   (sec) :      18.83
-   Temps CPU                      (sec) :      12.64
-   Utilisation de la mémoire       (Ko) :     681199
-   Util. disque du rép. de travail (Ko) :      44032
+Wed Jan 17, 2024   15:08:17
+   Temps écoulé                   (sec) :       3.12
+   Temps CPU                      (sec) :       2.05
+   Utilisation de la mémoire       (Ko) :     642066
+   Util. disque du rép. de travail (Ko) :      38912
 
-   Temps écoulé par étape (sec) :       0.58
-   Temps CPU par étape    (sec) :       0.45
+   Temps écoulé par étape (sec) :       0.16
+   Temps CPU par étape    (sec) :       0.13
+
+Commencer la calcul de contrainte et de déplacement
+Wed Jan 17, 2024   15:08:17
+   Temps écoulé                   (sec) :       3.28
+   Temps CPU                      (sec) :       2.17
+   Utilisation de la mémoire       (Ko) :     642066
+   Util. disque du rép. de travail (Ko) :      38912
+
+   Temps écoulé par étape (sec) :       0.44
+   Temps CPU par étape    (sec) :       0.13
+
+Commencer le calcul de réaction
+Wed Jan 17, 2024   15:08:18
+   Temps écoulé                   (sec) :       3.72
+   Temps CPU                      (sec) :       2.30
+   Utilisation de la mémoire       (Ko) :     677483
+   Util. disque du rép. de travail (Ko) :      38912
+
+   Temps écoulé par étape (sec) :       0.05
+   Temps CPU par étape    (sec) :       0.06
+
+Commencer calculs d'énergie de déformation
+Wed Jan 17, 2024   15:08:18
+   Temps écoulé                   (sec) :       3.77
+   Temps CPU                      (sec) :       2.36
+   Utilisation de la mémoire       (Ko) :     677483
+   Util. disque du rép. de travail (Ko) :      38912
+
+   Temps écoulé par étape (sec) :       0.09
+   Temps CPU par étape    (sec) :       0.05
 
 Itération terminée
-Thu Nov 30, 2023   11:05:49
-   Temps écoulé                   (sec) :      19.41
-   Temps CPU                      (sec) :      13.09
-   Utilisation de la mémoire       (Ko) :     681199
-   Util. disque du rép. de travail (Ko) :      44032
+Wed Jan 17, 2024   15:08:18
+   Temps écoulé                   (sec) :       3.87
+   Temps CPU                      (sec) :       2.41
+   Utilisation de la mémoire       (Ko) :     677483
+   Util. disque du rép. de travail (Ko) :      38912
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Analyse terminée : Analysis1
-Thu Nov 30, 2023   11:05:49
-   Temps écoulé                   (sec) :      19.43
-   Temps CPU                      (sec) :      13.09
-   Utilisation de la mémoire       (Ko) :     681199
-   Util. disque du rép. de travail (Ko) :      44032
+Wed Jan 17, 2024   15:08:18
+   Temps écoulé                   (sec) :       3.87
+   Temps CPU                      (sec) :       2.41
+   Utilisation de la mémoire       (Ko) :     677483
+   Util. disque du rép. de travail (Ko) :      38912

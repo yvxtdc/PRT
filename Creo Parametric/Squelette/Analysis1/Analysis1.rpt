@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Résumé de l'étude de conception "Analysis1"
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 -----------------------------------------------------
 
 Paramètres d'exécution
@@ -17,9 +17,13 @@ Ces vérifications tiennent compte du fait qu'AutoGEM
 créera automatiquement des éléments dans les volumes dotés de propriétés de
 matériau, sur les surfaces dotées de propriétés de type coque et sur les courbes
 dotées de propriétés de section de coque.
-   Générer les éléments automatiquement.
+La composante rotationnelle de la restriction spécifiée n'aura
+aucun effet parce que la surface à laquelle elle s'applique
+n'est associée à aucune coque.   Générer les éléments automatiquement.
 Vérification du modèle après création des éléments...
-Le modèle ne contient aucune erreur.
+La composante rotationnelle de la restriction spécifiée n'aura
+aucun effet parce que la surface à laquelle elle s'applique
+n'est associée à aucune coque.Le modèle ne contient aucune erreur.
 Résumé sur le modèle Creo Simulate Structure
 
    Système d'unités principal : MillimÃ¨tre Newton Seconde (mmNs)
@@ -31,123 +35,75 @@ Résumé sur le modèle Creo Simulate Structure
 
    Type de modèle : En trois dimentions
 
-   Points :                882
-   Arêtes :                3622
-   Faces :                4613
+   Points :                834
+   Arêtes :                3489
+   Faces :                4485
 
    Ressorts :                 0
    Masses :                  0
    Poutres :                   0
    Coques :                  0
-   Solides :               1873
+   Solides :               1833
 
-   Eléments :             1873
+   Eléments :             1833
 
 ------------------------------------------------------------
 
 Etude de conception standard
 
 Analyse statique "Analysis1" :
-Analyse en grands déplacements
 
    Méthode de convergence : Adaptative monopasse
    Grille de post-traitement :      4
 
-   Fichier journal de la boucle de convergence :                         (11:05:31)
+   Fichier journal de la boucle de convergence :                         (15:08:15)
 
    >> Passe  1 <<
-         Calcul des équations d'éléments         (11:05:31)
-            Nombre total d'équations :    37467
+         Calcul des équations d'éléments         (15:08:15)
+            Nombre total d'équations :    36339
             Ordre maximal d'arêtes :              3
-         Résolution des équations                (11:05:31)
-         Pas de temps 1 of 2:    0.00000e+00
-         Calcul des résultats de déplacement et de contrainte    (11:05:31)
-         Résolution des équations                (11:05:32)
-         Pas de temps 2 of 2:    1.00000e+00
-         Calcul des résultats de déplacement et de contrainte    (11:05:41)
-
-** Avertissement :
-
-            Dépassement de la condition d'élasticité pour les matières
-            répertoriées ci-dessous. Utilisez une matière élastoplastique,
-            le cas échéant.
-EN_STEEL_INSA
-         Vérification de la convergence          (11:05:41)
-         Vérif. ressources                       (11:05:42)
-            Temps écoulé                   (sec) :      12.24
-            Temps CPU                      (sec) :       8.50
-            Util. de la mémoire             (Ko) :     678919
-            Util. disque du rép. de travail (Ko) :      37888
+         Résolution des équations                (15:08:15)
+         Solution de post-traitement                (15:08:16)
+         Vérification de la convergence          (15:08:16)
+         Vérif. ressources                       (15:08:16)
+            Temps écoulé                   (sec) :       2.33
+            Temps CPU                      (sec) :       1.48
+            Util. de la mémoire             (Ko) :     639491
+            Util. disque du rép. de travail (Ko) :      35840
 
    >> Passe  2 <<
-         Calcul des équations d'éléments         (11:05:42)
-            Nombre total d'équations :    41457
-            Ordre maximal d'arêtes :              6
-         Résolution des équations                (11:05:42)
-         Pas de temps 1 of 2:    0.00000e+00
-         Calcul des résultats de déplacement et de contrainte    (11:05:42)
-         Résolution des équations                (11:05:43)
-         Pas de temps 2 of 2:    1.00000e+00
-         Calcul des résultats de déplacement et de contrainte    (11:05:48)
-         Vérification de la convergence          (11:05:48)
+         Calcul des équations d'éléments         (15:08:16)
+            Nombre total d'équations :    38463
+            Ordre maximal d'arêtes :              5
+         Résolution des équations                (15:08:16)
+         Solution de post-traitement                (15:08:17)
+         Vérification de la convergence          (15:08:17)
+         Calcul des résultats de déplacement et de contrainte    (15:08:17)
 
          Estimation des erreurs de contrainte en moyenne quadratique :
 
          Jeu charges          Erreur contrainte  % de contr max princ
          ----------------  ------------  -----------------
-         LoadSet1           1.65e+01       1.0% of  1.66e+03
+         LoadSet1           5.86e-01       1.2% of  4.81e+01
 
-         Vérif. ressources                       (11:05:49)
-            Temps écoulé                   (sec) :      19.41
-            Temps CPU                      (sec) :      13.09
-            Util. de la mémoire             (Ko) :     681199
-            Util. disque du rép. de travail (Ko) :      44032
+         Vérif. ressources                       (15:08:18)
+            Temps écoulé                   (sec) :       3.86
+            Temps CPU                      (sec) :       2.41
+            Util. de la mémoire             (Ko) :     677483
+            Util. disque du rép. de travail (Ko) :      38912
 
-   Masse totale du modèle :  3.015678e-05
+   Masse totale du modèle :  0.000000e+00
 
    Coût total du modèle :  0.000000e+00
-
-   Moments principaux d'inertie par rapport à l'origine du repère universel :
-
-     Ixx :   1.57108e-01
-     Ixy :   2.90190e-02  Iyy :   1.26233e-02
-     Ixz : -3.26954e-12  Iyz : -9.42434e-13  Izz :   1.69605e-01
-
-   Moments principaux d'inertie et axes principaux par rapport à l'origine du repère universel :
-
-            Prin. max.         Prin. interm.      Prin. min.
-            1.69605e-01         1.62718e-01         7.01285e-03
-
-   WCS X :   0.00000e+00         9.81818e-01       -1.89822e-01
-   Rep. univ. Y :   0.00000e+00         1.89822e-01         9.81818e-01
-   Rep. univ. Z :   1.00000e+00         0.00000e+00         0.00000e+00
-
-   Emplac. centre de gravité par rapport à origine rep. universel :
-                  (  1.23192e+01, -6.33277e+01, -1.78473e-11)
-
-   Moments principaux d'inertie par rapport au centre de gravité :
-
-     Ixx :   3.61668e-02
-     Ixy :   5.49221e-03  Iyy :   8.04662e-03
-     Ixz : -3.27617e-12  Iyz : -9.08350e-13  Izz :   4.40877e-02
-
-   Moments principaux d'inertie et axes principaux par rapport au Centre de gravité :
-
-            Prin. max.         Prin. interm.      Prin. min.
-            4.40877e-02         3.72014e-02         7.01199e-03
-
-   WCS X :   0.00000e+00         9.82715e-01       -1.85125e-01
-   Rep. univ. Y :   0.00000e+00         1.85125e-01         9.82715e-01
-   Rep. univ. Z :   1.00000e+00         0.00000e+00         0.00000e+00
 
    Jeu de restrictions : ConstraintSet1: BRAS_COMPLIANT
 
    Jeu de charges : LoadSet1: BRAS_COMPLIANT
 
       Charge résultante du modèle :
-         dans la direction X globale :  4.704288e-14
-         dans la direction Y globale : -1.000000e+00
-         dans la direction Z globale :  9.862307e-15
+         dans la direction X globale :  4.018217e-11
+         dans la direction Y globale :  5.000000e-01
+         dans la direction Z globale : -5.832154e-11
 
       Mesures :
 
@@ -155,27 +111,27 @@ EN_STEEL_INSA
       max_beam_tensile:     0.00000e+00
       max_beam_torsion:     0.00000e+00
       max_beam_total:       0.00000e+00
-      max_disp_mag:         3.23815e+00
-      max_disp_x:         -3.17631e+00
-      max_disp_y:         -2.59746e+00
-      max_disp_z:           2.25996e-03
-      max_prin_mag:       -1.65816e+03
+      max_disp_mag:         5.17476e+00
+      max_disp_x:           5.15751e+00
+      max_disp_y:           3.98778e+00
+      max_disp_z:         -4.54045e-03
+      max_prin_mag:         4.80853e+01
       max_rot_mag:          0.00000e+00
       max_rot_x:            0.00000e+00
       max_rot_y:            0.00000e+00
       max_rot_z:            0.00000e+00
-      max_stress_prin:      1.63127e+03
-      max_stress_vm:        1.59349e+03
-      max_stress_xx:      -8.50487e+02
-      max_stress_xy:        8.23750e+02
-      max_stress_xz:        8.97309e+01
-      max_stress_yy:        9.29098e+02
-      max_stress_yz:      -8.11690e+01
-      max_stress_zz:        4.88450e+02
-      min_stress_prin:    -1.65816e+03
-      strain_energy:        1.27561e+00
+      max_stress_prin:      4.80853e+01
+      max_stress_vm:        4.63557e+01
+      max_stress_xx:        2.81800e+01
+      max_stress_xy:      -2.38536e+01
+      max_stress_xz:      -2.21832e+00
+      max_stress_yy:      -2.80309e+01
+      max_stress_yz:        2.82822e+00
+      max_stress_zz:        1.35440e+01
+      min_stress_prin:    -4.78306e+01
+      strain_energy:        9.20039e-01
 
-Analyse "Analysis1" terminée   (11:05:49)
+Analyse "Analysis1" terminée   (15:08:18)
 
 ------------------------------------------------------------
 
@@ -184,15 +140,15 @@ Utilisation de la mémoire et du disque :
    Type de machine : Windows 64 
    Allocation de RAM pour le solveur (méga-octets) : 512.0
 
-   Temps total écoulé (secondes) : 19.47     
-   Temps total CPU    (secondes) : 13.11     
-   Util. max. de la mémoire (kilo-octets) : 681199    
-   Util. disque du rép. de travail (kilo-octets) : 44032     
+   Temps total écoulé (secondes) : 3.91      
+   Temps total CPU    (secondes) : 2.42      
+   Util. max. de la mémoire (kilo-octets) : 677483    
+   Util. disque du rép. de travail (kilo-octets) : 38912     
 
    Taille du répertoire de résultats (kilobytes):
-   22044 .\Analysis1
+   18722 .\Analysis1
 
 ------------------------------------------------------------
 Exécution terminée
-Thu Nov 30, 2023   11:05:49
+Wed Jan 17, 2024   15:08:18
 ------------------------------------------------------

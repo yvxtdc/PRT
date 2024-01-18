@@ -1,73 +1,58 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Fichier journal de diagnostic Log
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 -----------------------------------------
 
 Commencer la création d'une base de données pour l'étude de conception
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 
 Commencer la vérification d'erreurs en mode intégré
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 
 Commencer à générer les éléments
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:14
 
 Commencer la vérification d'erreurs en mode intégré
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:15
 
 Démarrage du comptage du solveur
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:15
 
 Commencer l'analyse : "Analysis1"
-Thu Nov 30, 2023   11:05:30
+Wed Jan 17, 2024   15:08:15
 
 Utilisation du solveur éparse
 
 Commencer la calcul de masse
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
 Démarrer l'itération 1
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
 Démarrage du traitement des restrictions ponctuelles multiples
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
 Commencer la minimisation du profil de matrice
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
 Commencer le calcul des éléments, passe 1
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
 Commencer l'assemblage de la matrice globale, passe 1
-Thu Nov 30, 2023   11:05:31
+Wed Jan 17, 2024   15:08:15
 
-Démarrage du pas de temps 0 of 1:   0.00000e+00
-Thu Nov 30, 2023   11:05:31
+Commencer la résolution des équations, passe 1
+Wed Jan 17, 2024   15:08:15
 
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:31
-
- using Logarithmic Strain
-
-
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:32
-
-Commencer la passe de vérification de convergence 1
-Thu Nov 30, 2023   11:05:32
-
-Démarrage du pas de temps 1 of 1:   1.00000e+00
-Thu Nov 30, 2023   11:05:32
-
-Nombre d'équations : 37467
-Largeur de bande moyenne :   154.494
-Largeur de bande maximale :   687
-Taille de la matrice globale (mb) : 46.3073
-Nombre de termes dans la matrice globale : 5788413     
+Nombre d'équations : 36339
+Largeur de bande moyenne :   150.73
+Largeur de bande maximale :   678
+Taille de la matrice globale (mb) : 43.8192
+Nombre de termes dans la matrice globale : 5477394     
 Minimum de mémoire vive recommandée pour le solveur direct : 2
 
-Size of element file (mb): 27.4207
+Size of element file (mb): 26.8351
 Taille maximale de la matrice d'éléments (kb) : 14.64
 Taille minimale de la matrice d'éléments (kb) : 14.64
 
@@ -125,132 +110,67 @@ suffisamment d'espace disque ou d'espace de permutation, ou si la
 quantité maximale de mémoire nécessaire à votre tâche est supérieure
 à la quantité de mémoire définie au niveau du système d'exploitation.
 
-Iteration     Residual norm
-------------- -------------
-            1             1 Thu Nov 30, 2023 11:05:33
-            2     0.0476521 Thu Nov 30, 2023 11:05:34
-            3     0.0755668 Thu Nov 30, 2023 11:05:34
-            4     0.0667085 Thu Nov 30, 2023 11:05:34
-            5     0.0533901 Thu Nov 30, 2023 11:05:34
-            6      0.113855 Thu Nov 30, 2023 11:05:34
-            7      0.276897 Thu Nov 30, 2023 11:05:34
-            8      0.104678 Thu Nov 30, 2023 11:05:34
-            9     0.0410633 Thu Nov 30, 2023 11:05:35
-           10      0.015188 Thu Nov 30, 2023 11:05:35
-           11     0.0691911 Thu Nov 30, 2023 11:05:35
-           12     0.0196181 Thu Nov 30, 2023 11:05:35
-           13     0.0510438 Thu Nov 30, 2023 11:05:35
-           14     0.0523327 Thu Nov 30, 2023 11:05:35
-           15     0.0460418 Thu Nov 30, 2023 11:05:36
-           16     0.0411056 Thu Nov 30, 2023 11:05:36
-           17     0.0310231 Thu Nov 30, 2023 11:05:36
-           18     0.0190952 Thu Nov 30, 2023 11:05:36
-           19     0.0179558 Thu Nov 30, 2023 11:05:36
-           20     0.0131269 Thu Nov 30, 2023 11:05:36
-           21     0.0155728 Thu Nov 30, 2023 11:05:36
-           22     0.0156235 Thu Nov 30, 2023 11:05:37
-           23     0.0117695 Thu Nov 30, 2023 11:05:37
-           24     0.0279737 Thu Nov 30, 2023 11:05:37
-           25     0.0121267 Thu Nov 30, 2023 11:05:37
-           26     0.0271976 Thu Nov 30, 2023 11:05:38
-           27     0.0096943 Thu Nov 30, 2023 11:05:38
-           28    0.00224831 Thu Nov 30, 2023 11:05:38
-           29    0.00909373 Thu Nov 30, 2023 11:05:38
-           30    0.00267024 Thu Nov 30, 2023 11:05:38
-           31    0.00306599 Thu Nov 30, 2023 11:05:38
-           32    0.00189234 Thu Nov 30, 2023 11:05:39
-           33   0.000649393 Thu Nov 30, 2023 11:05:39
-           34   0.000738926 Thu Nov 30, 2023 11:05:39
-           35   0.000419907 Thu Nov 30, 2023 11:05:39
-           36   0.000142235 Thu Nov 30, 2023 11:05:39
-           37   4.71001e-05 Thu Nov 30, 2023 11:05:39
-           38    2.1007e-05 Thu Nov 30, 2023 11:05:39
-           39   5.76237e-06 Thu Nov 30, 2023 11:05:39
-           40   7.55147e-07 Thu Nov 30, 2023 11:05:39
-           41    8.6062e-08 Thu Nov 30, 2023 11:05:40
-           42   1.19939e-08 Thu Nov 30, 2023 11:05:40
-           43   6.97687e-10 Thu Nov 30, 2023 11:05:40
-           44   3.59594e-11 Thu Nov 30, 2023 11:05:40
-           45   1.30444e-11 Thu Nov 30, 2023 11:05:40
-           46   4.20877e-13 Thu Nov 30, 2023 11:05:40
+Commencer les calculs de charge
+Wed Jan 17, 2024   15:08:16
 
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:41
-
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:41
+Commencer les calculs de post-traitement, passe 1
+Wed Jan 17, 2024   15:08:16
 
 Commencer la passe de vérification de convergence 1
-Thu Nov 30, 2023   11:05:41
+Wed Jan 17, 2024   15:08:16
+
+Commencer calculs d'énergie de déformation
+Wed Jan 17, 2024   15:08:16
 
 Démarrer l'itération 2
-Thu Nov 30, 2023   11:05:42
+Wed Jan 17, 2024   15:08:16
 
 Démarrage du traitement des restrictions ponctuelles multiples
-Thu Nov 30, 2023   11:05:42
+Wed Jan 17, 2024   15:08:16
 
 Commencer la minimisation du profil de matrice
-Thu Nov 30, 2023   11:05:42
+Wed Jan 17, 2024   15:08:16
 
 Commencer le calcul des éléments, passe 2
-Thu Nov 30, 2023   11:05:42
+Wed Jan 17, 2024   15:08:16
 
 Commencer l'assemblage de la matrice globale, passe 2
-Thu Nov 30, 2023   11:05:42
+Wed Jan 17, 2024   15:08:16
 
-Démarrage du pas de temps 0 of 1:   0.00000e+00
-Thu Nov 30, 2023   11:05:42
+Commencer la résolution des équations, passe 2
+Wed Jan 17, 2024   15:08:16
 
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:42
+Nombre d'équations : 38463
+Largeur de bande moyenne :   162.263
+Largeur de bande maximale :   783
+Taille de la matrice globale (mb) : 49.9289
+Nombre de termes dans la matrice globale : 6241107     
+Minimum de mémoire vive recommandée pour le solveur direct : 2
 
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:43
+Size of element file (mb): 29.7069
+Taille maximale de la matrice d'éléments (kb) : 113.568
+Taille minimale de la matrice d'éléments (kb) : 16.2067
 
-Démarrage du pas de temps 1 of 1:   1.00000e+00
-Thu Nov 30, 2023   11:05:43
+Commencer les calculs de charge
+Wed Jan 17, 2024   15:08:17
 
-Nombre d'équations : 41457
-Largeur de bande moyenne :   173.576
-Largeur de bande maximale :   960
-Taille de la matrice globale (mb) : 57.5674
-Nombre de termes dans la matrice globale : 7195920     
-Minimum de mémoire vive recommandée pour le solveur direct : 4
-
-Size of element file (mb): 33.5808
-Taille maximale de la matrice d'éléments (kb) : 255.024
-Taille minimale de la matrice d'éléments (kb) : 17.9289
-
-Iteration     Residual norm
-------------- -------------
-            1      0.984809 Thu Nov 30, 2023 11:05:44
-            2      0.936889 Thu Nov 30, 2023 11:05:45
-            3     0.0146923 Thu Nov 30, 2023 11:05:45
-            4      0.228169 Thu Nov 30, 2023 11:05:45
-            5    0.00255636 Thu Nov 30, 2023 11:05:46
-            6     0.0121096 Thu Nov 30, 2023 11:05:46
-            7    0.00251072 Thu Nov 30, 2023 11:05:46
-            8    0.00152516 Thu Nov 30, 2023 11:05:46
-            9   0.000765826 Thu Nov 30, 2023 11:05:46
-           10   9.64698e-05 Thu Nov 30, 2023 11:05:46
-           11   1.11155e-05 Thu Nov 30, 2023 11:05:46
-           12     3.319e-07 Thu Nov 30, 2023 11:05:47
-           13   1.61745e-08 Thu Nov 30, 2023 11:05:47
-           14   3.79069e-10 Thu Nov 30, 2023 11:05:47
-           15   5.12951e-12 Thu Nov 30, 2023 11:05:47
-           16   9.91637e-15 Thu Nov 30, 2023 11:05:47
-
-Commencer la calcul de contrainte et de déplacement
-Thu Nov 30, 2023   11:05:48
-
-Commencer le calcul de réaction
-Thu Nov 30, 2023   11:05:48
+Commencer les calculs de post-traitement, passe 2
+Wed Jan 17, 2024   15:08:17
 
 Commencer la passe de vérification de convergence 2
-Thu Nov 30, 2023   11:05:48
+Wed Jan 17, 2024   15:08:17
+
+Commencer la calcul de contrainte et de déplacement
+Wed Jan 17, 2024   15:08:17
+
+Commencer le calcul de réaction
+Wed Jan 17, 2024   15:08:18
+
+Commencer calculs d'énergie de déformation
+Wed Jan 17, 2024   15:08:18
 
 Itération terminée
-Thu Nov 30, 2023   11:05:49
+Wed Jan 17, 2024   15:08:18
 
 Analyse terminée : Analysis1
-Thu Nov 30, 2023   11:05:49
+Wed Jan 17, 2024   15:08:18
