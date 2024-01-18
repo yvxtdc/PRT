@@ -2,7 +2,7 @@ function [P, Rc, Ro, Rb] = contraintes(d1, th2, th3, L, Ch)
 % La fonction contrainte calcule les forces en jeu dans les liaisons en
 % fonction de la position du mécanisme et de la charge Ch (en N)
 
-% Recuperation des longueurs (en mm)
+% Recuperation des longueurs (en m)
 L2 = L(2);
 L3 = L(3);
 L4 = L(4);

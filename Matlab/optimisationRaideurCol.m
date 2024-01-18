@@ -1,6 +1,6 @@
 function [K, r] = optimisationRaideurCol(Re, E, ksec, e, b, th)
 % Donne la raideur du col optimise afin de respecter le coefficient de
-% securite pour les dimensions e et b (en mm) donnees. Le rayon des cols
+% securite pour les dimensions e et b (en m) donnees. Le rayon des cols
 % est egalement calcule
 
 r = optimisationCol(Re, E, ksec, e, b, th,25);

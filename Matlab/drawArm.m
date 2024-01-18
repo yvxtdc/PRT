@@ -4,7 +4,7 @@ function drawArm(d1, th2, th3, L, Ch, DispForces)
 % il est egalement possible d afficher les forces en jeu dans les liaisons
 % en fonction de la charge Ch (en N)
 
-% Recuperation des longueurs (en mm)
+% Recuperation des longueurs (en m)
 L1 = L(1);
 L3 = L(3);
 L4 = L(4);
