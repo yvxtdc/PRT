@@ -1,4 +1,4 @@
-function [P, Rc, Ro, Rb] = contraintes(d1, th2, th3, L, Ch)
+function [P, Rc, Ro, Rb] = contraintes(lambdac, th1, th2, L, Ch)
 % La fonction contrainte calcule les forces en jeu dans les liaisons en
 % fonction de la position du mécanisme et de la charge Ch (en N)
 
@@ -12,17 +12,17 @@ L5 = L(5);
 Ck = 0;
 
 % PFS applique au bras (toutes les forces en N et couples en N.m)
-F = -(Ck+(cos(th3)*L4-sin(th3)*L5)*Ch)/(cos(th2)*cos(th3)*L2+cos(th3)*sin(th2)*L3+sin(th3)*cos(th2)*L3-sin(th3)*sin(th2)*L2); % Force dans la bielle
-RxC = F*sin(th2)-Ch;  % Force selon x dans la laison pivot
-RzC = -F*cos(th2);     % Force selon z dans la liaison pivot
+F = -(Ck+(cos(th2)*L4-sin(th2)*L5)*Ch)/(cos(th1)*cos(th2)*L2+cos(th2)*sin(th1)*L3+sin(th2)*cos(th1)*L3-sin(th2)*sin(th1)*L2); % Force dans la bielle
+RxC = F*sin(th1)-Ch;  % Force selon x dans la laison pivot
+RzC = -F*cos(th1);     % Force selon z dans la liaison pivot
 
 % PFS applique au piston
-RxO = -F*sin(th2);
-MrO = -F*sin(th2)*d1;
-P = -F*cos(th2);
+RxO = -F*sin(th1);
+MrO = -F*sin(th1)*lambdac;
+P = -F*cos(th1);
 
 % Construction des torseurs d effort
-Rb = [-F*sin(th2) 0 ; 0 0 ; F*cos(th2) 0];
+Rb = [-F*sin(th1) 0 ; 0 0 ; F*cos(th1) 0];
 Rc = [RxC 0 ; 0 0 ; RzC 0];
 Ro = [RxO 0 ; 0 MrO ; 0 0];
 

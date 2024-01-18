@@ -1,4 +1,4 @@
-function drawArm(d1, th2, th3, L, Ch, DispForces)
+function drawArm(lambdac, th1, th2, L, Ch, DispForces)
 % La fonction drawArm permet de tracer la configuration geometrique du
 % systeme en fonction des variables moteurs et intermediaires du mecanisme
 % il est egalement possible d afficher les forces en jeu dans les liaisons
@@ -19,11 +19,11 @@ set(gca,'DataAspectRatio',[1,1,1])
 % Definition des position des points
 O = [b1 0];
 C = [0 -b2];
-A = O + [0 -d1];
-B = A + [L1*sin(th2) -L1*cos(th2)];
-BC = C + [L3*sin(th3) L3*cos(th3)];
-CE = C + [-L4*sin(th3) -L4*cos(th3)];
-E = CE + [-L5*cos(th3) L5*sin(th3)];
+A = O + [0 -lambdac];
+B = A + [L1*sin(th1) -L1*cos(th1)];
+BC = C + [L3*sin(th2) L3*cos(th2)];
+CE = C + [-L4*sin(th2) -L4*cos(th2)];
+E = CE + [-L5*cos(th2) L5*sin(th2)];
 
 % Lignes entre les points
 line([0 O(1)],[0 O(2)],'color','cyan')
@@ -39,7 +39,7 @@ line([CE(1) E(1)],[CE(2) E(2)],'color','black')
 if(DispForces == true)
     % Affichage des contraintes internes
     scale = .0005;
-    [P, Rc, Ro, Rb] = contraintes(d1, th2, th3, L, Ch);
+    [P, Rc, Ro, Rb] = contraintes(lambdac, th1, th2, L, Ch);
     ln = line([C(1) C(1)+Rc(1,1)*scale],[C(2) C(2)+Rc(3,1)*scale],'color','r');
     ln.LineWidth = 3;
     ln = line([O(1) O(1)+Ro(1,1)*scale],[O(2) O(2)+Ro(3,1)*scale],'color','r');
