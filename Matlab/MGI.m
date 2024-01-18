@@ -1,9 +1,11 @@
 function [d1, th2] = MGI(th3, L)
+% La fonction MGI effectue le calcul du modèle géométrique inverse du
+% systeme
 
-% Paramètres géométriques
-l1 = L(1);
-l2 = L(2);
-l3 = L(3);
+% Recuperations des parametres geometriques (en mm)
+L1 = L(1);
+L2 = L(2);
+L3 = L(3);
 b1 = L(6);
 b2 = L(7);
 
@@ -11,6 +13,6 @@ b2 = L(7);
 c3 = cos(th3);
 s3 = sin(th3);
 
-% MGI
-d1 = -l3*c3 + l2*s3 + b2 - sqrt(s3^2*l2^2 - 2*l3*c3*l2*s3 + c3^2*l3^2 + 2*s3*b1*l3 + 2*c3*b1*l2 - b1^2 + l1^2 - l2^2 - l3^2);
-th2 = asin(-(b1-l3*s3-l2*c3)/l1);
+% Calcul du MGI
+d1 = -L3*c3 + L2*s3 + b2 - sqrt(s3^2*L2^2 - 2*L3*c3*L2*s3 + c3^2*L3^2 + 2*s3*b1*L3 + 2*c3*b1*L2 - b1^2 + L1^2 - L2^2 - L3^2);
+th2 = asin(-(b1-L3*s3-L2*c3)/L1);

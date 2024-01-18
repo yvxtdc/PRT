@@ -1,6 +1,10 @@
 function drawArm(d1, th2, th3, L, Ch, DispForces)
+% La fonction drawArm permet de tracer la configuration geometrique du
+% systeme en fonction des variables moteurs et intermediaires du mecanisme
+% il est egalement possible d afficher les forces en jeu dans les liaisons
+% en fonction de la charge Ch (en N)
 
-% Definition parametres
+% Recuperation des longueurs (en mm)
 L1 = L(1);
 L3 = L(3);
 L4 = L(4);
@@ -12,7 +16,7 @@ b2 = L(7);
 axis([-L4 b1+L1 -b2-L4-.01 .01 ])
 set(gca,'DataAspectRatio',[1,1,1])
 
-% Position des points
+% Definition des position des points
 O = [b1 0];
 C = [0 -b2];
 A = O + [0 -d1];
