@@ -1,5 +1,5 @@
 function [K,sigmaMax]=CaracCol(E,e,r,b,theta,Fcomp)
-% La fonction col permet de calculer la raideur (en N.m/rad) ainsi que la
+% La fonction CaracCol permet de calculer la raideur (en N.m/rad) ainsi que la
 % contrainte maximale (en MPa) en fonction du matériau (module d'Young en MPa), des dimensions (en m), de
 % l'angle (en rad) ainsi que de la Force de compression (en N)
 
