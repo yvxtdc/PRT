@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Fichier journal de l'étude de conception "Analysis1"
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 ----------------------------------------
 
 Commande du solveur avec les options de ligne de commande spécifiées :
@@ -9,20 +9,20 @@ Commande du solveur avec les options de ligne de commande spécifiées :
  C:\Program Files\PTC\Creo 8.0.4.0\Common Files\mech\x86e_win64\bin\msengine.exe  Analysis1  -i  .  -w  .  -solram  512  -sturm  default  -nl_ldc  -num_threads  ALL  -results_io_cache_size  1024 
 
 Commencer la création d'une base de données pour l'étude de conception
-Wed Jan 17, 2024   15:08:14
-   Temps écoulé                   (sec) :       0.56
-   Temps CPU                      (sec) :       0.03
-   Utilisation de la mémoire       (Ko) :      69007
+Fri Jan 19, 2024   11:20:28
+   Temps écoulé                   (sec) :       0.83
+   Temps CPU                      (sec) :       0.05
+   Utilisation de la mémoire       (Ko) :      66198
    Util. disque du rép. de travail (Ko) :          0
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer la vérification d'erreurs en mode intégré
-Wed Jan 17, 2024   15:08:14
-   Temps écoulé                   (sec) :       0.57
-   Temps CPU                      (sec) :       0.03
-   Utilisation de la mémoire       (Ko) :      69007
+Fri Jan 19, 2024   11:20:28
+   Temps écoulé                   (sec) :       0.84
+   Temps CPU                      (sec) :       0.05
+   Utilisation de la mémoire       (Ko) :      66198
    Util. disque du rép. de travail (Ko) :          0
 
 Vérification du modèle avant création des éléments...
@@ -37,10 +37,10 @@ n'est associée à aucune coque.
    Temps CPU par étape    (sec) :       0.00
 
 Commencer à générer les éléments
-Wed Jan 17, 2024   15:08:14
-   Temps écoulé                   (sec) :       0.57
-   Temps CPU                      (sec) :       0.03
-   Utilisation de la mémoire       (Ko) :      69124
+Fri Jan 19, 2024   11:20:28
+   Temps écoulé                   (sec) :       0.85
+   Temps CPU                      (sec) :       0.05
+   Utilisation de la mémoire       (Ko) :      66882
    Util. disque du rép. de travail (Ko) :          0
 
 Copie des éléments depuis un modèle d'étude existant ...
@@ -52,245 +52,245 @@ Il existe déjà un jeu complet d'éléments.
 OK
 
 
-   Temps écoulé par étape (sec) :       0.32
-   Temps CPU par étape    (sec) :       0.28
+   Temps écoulé par étape (sec) :       0.16
+   Temps CPU par étape    (sec) :       0.09
 
 Commencer la vérification d'erreurs en mode intégré
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       0.89
-   Temps CPU                      (sec) :       0.31
-   Utilisation de la mémoire       (Ko) :      87175
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.01
+   Temps CPU                      (sec) :       0.14
+   Utilisation de la mémoire       (Ko) :      73380
    Util. disque du rép. de travail (Ko) :          0
 Vérification du modèle après création des éléments...
 La composante rotationnelle de la restriction spécifiée n'aura
 aucun effet parce que la surface à laquelle elle s'applique
 n'est associée à aucune coque.Le modèle ne contient aucune erreur.
-   Temps écoulé par étape (sec) :       0.06
-   Temps CPU par étape    (sec) :       0.05
-
-Démarrage du comptage du solveur
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       0.94
-   Temps CPU                      (sec) :       0.36
-   Utilisation de la mémoire       (Ko) :      87179
-   Util. disque du rép. de travail (Ko) :          0
-
-   Temps écoulé par étape (sec) :       0.08
-   Temps CPU par étape    (sec) :       0.05
-
-Commencer l'analyse : "Analysis1"
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.02
-   Temps CPU                      (sec) :       0.41
-   Utilisation de la mémoire       (Ko) :     102477
-   Util. disque du rép. de travail (Ko) :          0
-
-   Temps écoulé par étape (sec) :       0.10
-   Temps CPU par étape    (sec) :       0.09
-
-Commencer la calcul de masse
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.12
-   Temps CPU                      (sec) :       0.50
-   Utilisation de la mémoire       (Ko) :     102477
-   Util. disque du rép. de travail (Ko) :          0
-
-   Temps écoulé par étape (sec) :       0.01
-   Temps CPU par étape    (sec) :       0.00
-
-Démarrer l'itération 1
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.13
-   Temps CPU                      (sec) :       0.50
-   Utilisation de la mémoire       (Ko) :     102477
-   Util. disque du rép. de travail (Ko) :          0
-
    Temps écoulé par étape (sec) :       0.03
    Temps CPU par étape    (sec) :       0.02
 
-Commencer le calcul des éléments, passe 1
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.16
-   Temps CPU                      (sec) :       0.52
-   Utilisation de la mémoire       (Ko) :     117749
+Démarrage du comptage du solveur
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.04
+   Temps CPU                      (sec) :       0.16
+   Utilisation de la mémoire       (Ko) :      73380
    Util. disque du rép. de travail (Ko) :          0
 
-   Temps écoulé par étape (sec) :       0.14
-   Temps CPU par étape    (sec) :       0.16
+   Temps écoulé par étape (sec) :       0.04
+   Temps CPU par étape    (sec) :       0.02
+
+Commencer l'analyse : "Analysis1"
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.09
+   Temps CPU                      (sec) :       0.17
+   Utilisation de la mémoire       (Ko) :      73452
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.05
+   Temps CPU par étape    (sec) :       0.06
+
+Commencer la calcul de masse
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.13
+   Temps CPU                      (sec) :       0.23
+   Utilisation de la mémoire       (Ko) :      74555
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.05
+   Temps CPU par étape    (sec) :       0.02
+
+Démarrer l'itération 1
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.18
+   Temps CPU                      (sec) :       0.25
+   Utilisation de la mémoire       (Ko) :      74954
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.03
+   Temps CPU par étape    (sec) :       0.03
+
+Commencer le calcul des éléments, passe 1
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.21
+   Temps CPU                      (sec) :       0.28
+   Utilisation de la mémoire       (Ko) :      96363
+   Util. disque du rép. de travail (Ko) :          0
+
+   Temps écoulé par étape (sec) :       0.05
+   Temps CPU par étape    (sec) :       0.02
 
 Commencer l'assemblage de la matrice globale, passe 1
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.31
-   Temps CPU                      (sec) :       0.67
-   Utilisation de la mémoire       (Ko) :     121059
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.26
+   Temps CPU                      (sec) :       0.30
+   Utilisation de la mémoire       (Ko) :      98548
+   Util. disque du rép. de travail (Ko) :       7168
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer la résolution des équations, passe 1
-Wed Jan 17, 2024   15:08:15
-   Temps écoulé                   (sec) :       1.32
-   Temps CPU                      (sec) :       0.67
-   Utilisation de la mémoire       (Ko) :     123193
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.27
+   Temps CPU                      (sec) :       0.30
+   Utilisation de la mémoire       (Ko) :      98548
+   Util. disque du rép. de travail (Ko) :       7168
 
-   Temps écoulé par étape (sec) :       0.42
-   Temps CPU par étape    (sec) :       0.37
+   Temps écoulé par étape (sec) :       0.13
+   Temps CPU par étape    (sec) :       0.06
 
 Commencer les calculs de charge
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       1.74
-   Temps CPU                      (sec) :       1.05
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.40
+   Temps CPU                      (sec) :       0.36
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer les calculs de post-traitement, passe 1
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       1.75
-   Temps CPU                      (sec) :       1.05
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.40
+   Temps CPU                      (sec) :       0.36
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
 
-   Temps écoulé par étape (sec) :       0.37
-   Temps CPU par étape    (sec) :       0.28
+   Temps écoulé par étape (sec) :       0.10
+   Temps CPU par étape    (sec) :       0.08
 
 Commencer la passe de vérification de convergence 1
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.12
-   Temps CPU                      (sec) :       1.33
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.50
+   Temps CPU                      (sec) :       0.44
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
 
-   Temps écoulé par étape (sec) :       0.16
-   Temps CPU par étape    (sec) :       0.13
-
-Commencer calculs d'énergie de déformation
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.28
-   Temps CPU                      (sec) :       1.45
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
-
-   Temps écoulé par étape (sec) :       0.05
+   Temps écoulé par étape (sec) :       0.07
    Temps CPU par étape    (sec) :       0.03
 
+Commencer calculs d'énergie de déformation
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.57
+   Temps CPU                      (sec) :       0.47
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
+
+   Temps écoulé par étape (sec) :       0.02
+   Temps CPU par étape    (sec) :       0.00
+
 Démarrer l'itération 2
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.33
-   Temps CPU                      (sec) :       1.48
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.59
+   Temps CPU                      (sec) :       0.47
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
 
    Temps écoulé par étape (sec) :       0.03
    Temps CPU par étape    (sec) :       0.02
 
 Commencer le calcul des éléments, passe 2
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.35
-   Temps CPU                      (sec) :       1.50
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      35840
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.62
+   Temps CPU                      (sec) :       0.48
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :       7168
 
-   Temps écoulé par étape (sec) :       0.08
-   Temps CPU par étape    (sec) :       0.03
+   Temps écoulé par étape (sec) :       0.19
+   Temps CPU par étape    (sec) :       0.11
 
 Commencer l'assemblage de la matrice globale, passe 2
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.43
-   Temps CPU                      (sec) :       1.53
-   Utilisation de la mémoire       (Ko) :     639491
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.81
+   Temps CPU                      (sec) :       0.59
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :      15360
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer la résolution des équations, passe 2
-Wed Jan 17, 2024   15:08:16
-   Temps écoulé                   (sec) :       2.44
-   Temps CPU                      (sec) :       1.53
-   Utilisation de la mémoire       (Ko) :     641688
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:29
+   Temps écoulé                   (sec) :       1.81
+   Temps CPU                      (sec) :       0.59
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.37
-   Temps CPU par étape    (sec) :       0.25
+   Temps écoulé par étape (sec) :       0.15
+   Temps CPU par étape    (sec) :       0.05
 
 Commencer les calculs de charge
-Wed Jan 17, 2024   15:08:17
-   Temps écoulé                   (sec) :       2.81
-   Temps CPU                      (sec) :       1.78
-   Utilisation de la mémoire       (Ko) :     641688
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       1.96
+   Temps CPU                      (sec) :       0.64
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :      15360
 
    Temps écoulé par étape (sec) :       0.01
    Temps CPU par étape    (sec) :       0.00
 
 Commencer les calculs de post-traitement, passe 2
-Wed Jan 17, 2024   15:08:17
-   Temps écoulé                   (sec) :       2.82
-   Temps CPU                      (sec) :       1.78
-   Utilisation de la mémoire       (Ko) :     641688
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       1.97
+   Temps CPU                      (sec) :       0.64
+   Utilisation de la mémoire       (Ko) :     598668
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.30
-   Temps CPU par étape    (sec) :       0.27
+   Temps écoulé par étape (sec) :       0.13
+   Temps CPU par étape    (sec) :       0.09
 
 Commencer la passe de vérification de convergence 2
-Wed Jan 17, 2024   15:08:17
-   Temps écoulé                   (sec) :       3.12
-   Temps CPU                      (sec) :       2.05
-   Utilisation de la mémoire       (Ko) :     642066
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.10
+   Temps CPU                      (sec) :       0.73
+   Utilisation de la mémoire       (Ko) :     598994
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.16
-   Temps CPU par étape    (sec) :       0.13
+   Temps écoulé par étape (sec) :       0.10
+   Temps CPU par étape    (sec) :       0.09
 
 Commencer la calcul de contrainte et de déplacement
-Wed Jan 17, 2024   15:08:17
-   Temps écoulé                   (sec) :       3.28
-   Temps CPU                      (sec) :       2.17
-   Utilisation de la mémoire       (Ko) :     642066
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.20
+   Temps CPU                      (sec) :       0.83
+   Utilisation de la mémoire       (Ko) :     599092
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.44
-   Temps CPU par étape    (sec) :       0.13
+   Temps écoulé par étape (sec) :       0.13
+   Temps CPU par étape    (sec) :       0.08
 
 Commencer le calcul de réaction
-Wed Jan 17, 2024   15:08:18
-   Temps écoulé                   (sec) :       3.72
-   Temps CPU                      (sec) :       2.30
-   Utilisation de la mémoire       (Ko) :     677483
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.33
+   Temps CPU                      (sec) :       0.91
+   Utilisation de la mémoire       (Ko) :     636784
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.05
-   Temps CPU par étape    (sec) :       0.06
-
-Commencer calculs d'énergie de déformation
-Wed Jan 17, 2024   15:08:18
-   Temps écoulé                   (sec) :       3.77
-   Temps CPU                      (sec) :       2.36
-   Utilisation de la mémoire       (Ko) :     677483
-   Util. disque du rép. de travail (Ko) :      38912
-
-   Temps écoulé par étape (sec) :       0.09
+   Temps écoulé par étape (sec) :       0.04
    Temps CPU par étape    (sec) :       0.05
 
-Itération terminée
-Wed Jan 17, 2024   15:08:18
-   Temps écoulé                   (sec) :       3.87
-   Temps CPU                      (sec) :       2.41
-   Utilisation de la mémoire       (Ko) :     677483
-   Util. disque du rép. de travail (Ko) :      38912
+Commencer calculs d'énergie de déformation
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.37
+   Temps CPU                      (sec) :       0.95
+   Utilisation de la mémoire       (Ko) :     636784
+   Util. disque du rép. de travail (Ko) :      15360
 
-   Temps écoulé par étape (sec) :       0.01
-   Temps CPU par étape    (sec) :       0.00
+   Temps écoulé par étape (sec) :       0.06
+   Temps CPU par étape    (sec) :       0.03
+
+Itération terminée
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.43
+   Temps CPU                      (sec) :       0.98
+   Utilisation de la mémoire       (Ko) :     636784
+   Util. disque du rép. de travail (Ko) :      15360
+
+   Temps écoulé par étape (sec) :       0.02
+   Temps CPU par étape    (sec) :       0.01
 
 Analyse terminée : Analysis1
-Wed Jan 17, 2024   15:08:18
-   Temps écoulé                   (sec) :       3.87
-   Temps CPU                      (sec) :       2.41
-   Utilisation de la mémoire       (Ko) :     677483
-   Util. disque du rép. de travail (Ko) :      38912
+Fri Jan 19, 2024   11:20:30
+   Temps écoulé                   (sec) :       2.45
+   Temps CPU                      (sec) :       1.00
+   Utilisation de la mémoire       (Ko) :     636784
+   Util. disque du rép. de travail (Ko) :      15360

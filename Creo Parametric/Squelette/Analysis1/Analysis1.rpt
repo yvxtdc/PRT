@@ -1,7 +1,7 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Résumé de l'étude de conception "Analysis1"
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 -----------------------------------------------------
 
 Paramètres d'exécution
@@ -35,17 +35,17 @@ Résumé sur le modèle Creo Simulate Structure
 
    Type de modèle : En trois dimentions
 
-   Points :                834
-   Arêtes :                3489
-   Faces :                4485
+   Points :                191
+   Arêtes :                 775
+   Faces :                 969
 
    Ressorts :                 0
    Masses :                  0
    Poutres :                   0
    Coques :                  0
-   Solides :               1833
+   Solides :                388
 
-   Eléments :             1833
+   Eléments :              388
 
 ------------------------------------------------------------
 
@@ -56,54 +56,87 @@ Analyse statique "Analysis1" :
    Méthode de convergence : Adaptative monopasse
    Grille de post-traitement :      4
 
-   Fichier journal de la boucle de convergence :                         (15:08:15)
+   Fichier journal de la boucle de convergence :                         (11:20:29)
 
    >> Passe  1 <<
-         Calcul des équations d'éléments         (15:08:15)
-            Nombre total d'équations :    36339
+         Calcul des équations d'éléments         (11:20:29)
+            Nombre total d'équations :     7875
             Ordre maximal d'arêtes :              3
-         Résolution des équations                (15:08:15)
-         Solution de post-traitement                (15:08:16)
-         Vérification de la convergence          (15:08:16)
-         Vérif. ressources                       (15:08:16)
-            Temps écoulé                   (sec) :       2.33
-            Temps CPU                      (sec) :       1.48
-            Util. de la mémoire             (Ko) :     639491
-            Util. disque du rép. de travail (Ko) :      35840
+         Résolution des équations                (11:20:29)
+         Solution de post-traitement                (11:20:29)
+         Vérification de la convergence          (11:20:29)
+         Vérif. ressources                       (11:20:29)
+            Temps écoulé                   (sec) :       1.59
+            Temps CPU                      (sec) :       0.47
+            Util. de la mémoire             (Ko) :     598668
+            Util. disque du rép. de travail (Ko) :       7168
 
    >> Passe  2 <<
-         Calcul des équations d'éléments         (15:08:16)
-            Nombre total d'équations :    38463
-            Ordre maximal d'arêtes :              5
-         Résolution des équations                (15:08:16)
-         Solution de post-traitement                (15:08:17)
-         Vérification de la convergence          (15:08:17)
-         Calcul des résultats de déplacement et de contrainte    (15:08:17)
+         Calcul des équations d'éléments         (11:20:29)
+            Nombre total d'équations :    11619
+            Ordre maximal d'arêtes :              7
+         Résolution des équations                (11:20:29)
+         Solution de post-traitement                (11:20:30)
+         Vérification de la convergence          (11:20:30)
+         Calcul des résultats de déplacement et de contrainte    (11:20:30)
 
          Estimation des erreurs de contrainte en moyenne quadratique :
 
          Jeu charges          Erreur contrainte  % de contr max princ
          ----------------  ------------  -----------------
-         LoadSet1           5.86e-01       1.2% of  4.81e+01
+         LoadSet1           1.64e+00       2.3% of  7.02e+01
 
-         Vérif. ressources                       (15:08:18)
-            Temps écoulé                   (sec) :       3.86
-            Temps CPU                      (sec) :       2.41
-            Util. de la mémoire             (Ko) :     677483
-            Util. disque du rép. de travail (Ko) :      38912
+         Vérif. ressources                       (11:20:30)
+            Temps écoulé                   (sec) :       2.42
+            Temps CPU                      (sec) :       0.98
+            Util. de la mémoire             (Ko) :     636784
+            Util. disque du rép. de travail (Ko) :      15360
 
-   Masse totale du modèle :  0.000000e+00
+   Masse totale du modèle :  6.490572e-06
 
    Coût total du modèle :  0.000000e+00
+
+   Moments principaux d'inertie par rapport à l'origine du repère universel :
+
+     Ixx :   3.44203e-02
+     Ixy :   5.30399e-03  Iyy :   3.01401e-03
+     Ixz : -3.19613e-12  Iyz : -3.71437e-12  Izz :   3.74072e-02
+
+   Moments principaux d'inertie et axes principaux par rapport à l'origine du repère universel :
+
+            Prin. max.         Prin. interm.      Prin. min.
+            3.74072e-02         3.52919e-02         2.14244e-03
+
+   WCS X : -1.73770e-09         9.86766e-01       -1.62148e-01
+   Rep. univ. Y : -3.75978e-10         1.62148e-01         9.86766e-01
+   Rep. univ. Z :   1.00000e+00         1.77566e-09         8.92382e-11
+
+   Emplac. centre de gravité par rapport à origine rep. universel :
+                  (  1.51265e+01, -6.91265e+01, -2.23932e-09)
+
+   Moments principaux d'inertie par rapport au centre de gravité :
+
+     Ixx :   3.40533e-03
+     Ixy : -1.48282e-03  Iyy :   1.52890e-03
+     Ixz : -3.41598e-12  Iyz : -2.70965e-12  Izz :   4.90711e-03
+
+   Moments principaux d'inertie et axes principaux par rapport au Centre de gravité :
+
+            Prin. max.         Prin. interm.      Prin. min.
+            4.90711e-03         4.22182e-03         7.12404e-04
+
+   WCS X : -2.61673e-09         8.75981e-01         4.82346e-01
+   Rep. univ. Y :   3.46481e-10       -4.82346e-01         8.75981e-01
+   Rep. univ. Z :   1.00000e+00         2.45933e-09         9.58658e-10
 
    Jeu de restrictions : ConstraintSet1: BRAS_COMPLIANT
 
    Jeu de charges : LoadSet1: BRAS_COMPLIANT
 
       Charge résultante du modèle :
-         dans la direction X globale :  4.018217e-11
-         dans la direction Y globale :  5.000000e-01
-         dans la direction Z globale : -5.832154e-11
+         dans la direction X globale :  6.991836e-12
+         dans la direction Y globale :  7.500000e-01
+         dans la direction Z globale :  3.359116e-11
 
       Mesures :
 
@@ -111,27 +144,27 @@ Analyse statique "Analysis1" :
       max_beam_tensile:     0.00000e+00
       max_beam_torsion:     0.00000e+00
       max_beam_total:       0.00000e+00
-      max_disp_mag:         5.17476e+00
-      max_disp_x:           5.15751e+00
-      max_disp_y:           3.98778e+00
-      max_disp_z:         -4.54045e-03
-      max_prin_mag:         4.80853e+01
+      max_disp_mag:         5.17498e+00
+      max_disp_x:           5.17462e+00
+      max_disp_y:           3.87264e+00
+      max_disp_z:         -1.87522e-02
+      max_prin_mag:       -7.02165e+01
       max_rot_mag:          0.00000e+00
       max_rot_x:            0.00000e+00
       max_rot_y:            0.00000e+00
       max_rot_z:            0.00000e+00
-      max_stress_prin:      4.80853e+01
-      max_stress_vm:        4.63557e+01
-      max_stress_xx:        2.81800e+01
-      max_stress_xy:      -2.38536e+01
-      max_stress_xz:      -2.21832e+00
-      max_stress_yy:      -2.80309e+01
-      max_stress_yz:        2.82822e+00
-      max_stress_zz:        1.35440e+01
-      min_stress_prin:    -4.78306e+01
-      strain_energy:        9.20039e-01
+      max_stress_prin:      6.99630e+01
+      max_stress_vm:        6.25954e+01
+      max_stress_xx:      -4.08193e+01
+      max_stress_xy:        3.50924e+01
+      max_stress_xz:        3.56835e+00
+      max_stress_yy:        3.99822e+01
+      max_stress_yz:        3.77507e+00
+      max_stress_zz:      -2.64764e+01
+      min_stress_prin:    -7.02165e+01
+      strain_energy:        1.33649e+00
 
-Analyse "Analysis1" terminée   (15:08:18)
+Analyse "Analysis1" terminée   (11:20:30)
 
 ------------------------------------------------------------
 
@@ -140,15 +173,15 @@ Utilisation de la mémoire et du disque :
    Type de machine : Windows 64 
    Allocation de RAM pour le solveur (méga-octets) : 512.0
 
-   Temps total écoulé (secondes) : 3.91      
-   Temps total CPU    (secondes) : 2.42      
-   Util. max. de la mémoire (kilo-octets) : 677483    
-   Util. disque du rép. de travail (kilo-octets) : 38912     
+   Temps total écoulé (secondes) : 2.47      
+   Temps total CPU    (secondes) : 1.02      
+   Util. max. de la mémoire (kilo-octets) : 636784    
+   Util. disque du rép. de travail (kilo-octets) : 15360     
 
    Taille du répertoire de résultats (kilobytes):
-   18722 .\Analysis1
+   5651 .\Analysis1
 
 ------------------------------------------------------------
 Exécution terminée
-Wed Jan 17, 2024   15:08:18
+Fri Jan 19, 2024   11:20:30
 ------------------------------------------------------

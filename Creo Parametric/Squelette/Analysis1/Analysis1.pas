@@ -1,58 +1,58 @@
 ------------------------------------------------------------
 Creo Simulate Structure Version P-80-44:spg
 Fichier journal de diagnostic Log
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 -----------------------------------------
 
 Commencer la création d'une base de données pour l'étude de conception
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 
 Commencer la vérification d'erreurs en mode intégré
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 
 Commencer à générer les éléments
-Wed Jan 17, 2024   15:08:14
+Fri Jan 19, 2024   11:20:28
 
 Commencer la vérification d'erreurs en mode intégré
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Démarrage du comptage du solveur
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Commencer l'analyse : "Analysis1"
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Utilisation du solveur éparse
 
 Commencer la calcul de masse
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Démarrer l'itération 1
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Démarrage du traitement des restrictions ponctuelles multiples
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Commencer la minimisation du profil de matrice
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Commencer le calcul des éléments, passe 1
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Commencer l'assemblage de la matrice globale, passe 1
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
 Commencer la résolution des équations, passe 1
-Wed Jan 17, 2024   15:08:15
+Fri Jan 19, 2024   11:20:29
 
-Nombre d'équations : 36339
-Largeur de bande moyenne :   150.73
-Largeur de bande maximale :   678
-Taille de la matrice globale (mb) : 43.8192
-Nombre de termes dans la matrice globale : 5477394     
+Nombre d'équations : 7875
+Largeur de bande moyenne :   118.287
+Largeur de bande maximale :   384
+Taille de la matrice globale (mb) : 7.45207
+Nombre de termes dans la matrice globale : 931509      
 Minimum de mémoire vive recommandée pour le solveur direct : 2
 
-Size of element file (mb): 26.8351
+Size of element file (mb): 5.68032
 Taille maximale de la matrice d'éléments (kb) : 14.64
 Taille minimale de la matrice d'éléments (kb) : 14.64
 
@@ -111,66 +111,66 @@ quantité maximale de mémoire nécessaire à votre tâche est supérieure
 à la quantité de mémoire définie au niveau du système d'exploitation.
 
 Commencer les calculs de charge
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer les calculs de post-traitement, passe 1
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer la passe de vérification de convergence 1
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer calculs d'énergie de déformation
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Démarrer l'itération 2
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Démarrage du traitement des restrictions ponctuelles multiples
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer la minimisation du profil de matrice
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer le calcul des éléments, passe 2
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer l'assemblage de la matrice globale, passe 2
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
 Commencer la résolution des équations, passe 2
-Wed Jan 17, 2024   15:08:16
+Fri Jan 19, 2024   11:20:29
 
-Nombre d'équations : 38463
-Largeur de bande moyenne :   162.263
-Largeur de bande maximale :   783
-Taille de la matrice globale (mb) : 49.9289
-Nombre de termes dans la matrice globale : 6241107     
+Nombre d'équations : 11619
+Largeur de bande moyenne :   183.942
+Largeur de bande maximale :   729
+Taille de la matrice globale (mb) : 17.0978
+Nombre de termes dans la matrice globale : 2137221     
 Minimum de mémoire vive recommandée pour le solveur direct : 2
 
-Size of element file (mb): 29.7069
-Taille maximale de la matrice d'éléments (kb) : 113.568
-Taille minimale de la matrice d'éléments (kb) : 16.2067
+Size of element file (mb): 13.3527
+Taille maximale de la matrice d'éléments (kb) : 519.84
+Taille minimale de la matrice d'éléments (kb) : 34.4142
 
 Commencer les calculs de charge
-Wed Jan 17, 2024   15:08:17
+Fri Jan 19, 2024   11:20:30
 
 Commencer les calculs de post-traitement, passe 2
-Wed Jan 17, 2024   15:08:17
+Fri Jan 19, 2024   11:20:30
 
 Commencer la passe de vérification de convergence 2
-Wed Jan 17, 2024   15:08:17
+Fri Jan 19, 2024   11:20:30
 
 Commencer la calcul de contrainte et de déplacement
-Wed Jan 17, 2024   15:08:17
+Fri Jan 19, 2024   11:20:30
 
 Commencer le calcul de réaction
-Wed Jan 17, 2024   15:08:18
+Fri Jan 19, 2024   11:20:30
 
 Commencer calculs d'énergie de déformation
-Wed Jan 17, 2024   15:08:18
+Fri Jan 19, 2024   11:20:30
 
 Itération terminée
-Wed Jan 17, 2024   15:08:18
+Fri Jan 19, 2024   11:20:30
 
 Analyse terminée : Analysis1
-Wed Jan 17, 2024   15:08:18
+Fri Jan 19, 2024   11:20:30
